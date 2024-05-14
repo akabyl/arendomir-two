@@ -2,13 +2,11 @@ const dateInput = document.getElementById('date-input');
 const mobileDateInput = document.getElementById('mobile-info__date-input');
 
 flatpickr(dateInput, {
-	// enableTime: true,
-	// dateFormat: 'Y-m-d H:i',
+	locale: 'ru',
 });
 
 flatpickr(mobileDateInput, {
-	// enableTime: true,
-	// dateFormat: 'Y-m-d H:i',
+	locale: 'ru',
 });
 
 
@@ -63,7 +61,7 @@ let stylesheetText = `
     width : calc(100% - 1rem) ;
     height: 100% ;
     background-color: var(--accent-color) ;
-    transition: background-color 300ms ease-out ;
+    transition: background-color 0.1s ease-out ;
     transform-origin: 100% 0%;
     transform: translateX(calc( var(--value) * 100% )) scaleX(1.2);
 }
@@ -78,7 +76,7 @@ let stylesheetText = `
     cursor: pointer ;
     z-index: 99 ;
     border: 2px solid var(--accent-color) ;
-    transition: border-color 300ms ease-out ;
+    transition: border-color 0.1s ease-out ;
 }
 
 #value {
@@ -98,7 +96,7 @@ let stylesheetText = `
     background-color: var(--accent-color);
     opacity: 0 ;
 
-    transition: left 300ms ease-out , opacity 300ms 300ms ease-out , background-color 300ms ease-out ;
+    transition: left 0.1s ease-out , opacity 0.1s 0.1s ease-out , background-color 0.1s ease-out ;
 }
 
 #value::before {

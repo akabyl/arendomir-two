@@ -411,7 +411,10 @@ body {
   color: var(--sidebar-color);
 }
 .label-btn:hover .custom-radio {
-  border-color: #2cacaf;
+  border-color: var(--accent-color);
+}
+.label-btn:hover .custom-checkbox {
+  border-color: var(--accent-color);
 }
 
 /******************************************************** RADIO **************************************/
@@ -432,7 +435,9 @@ body {
   width: 22px;
   height: 22px;
   border: 2px solid #d4d4d4;
-  border-radius: 4px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); /* применяем размытие к элементу */
   margin-right: 10px;
   position: relative;
   transition: border-color 0.2s ease-in;
@@ -504,6 +509,7 @@ body {
   position: relative;
   max-width: 263px;
   width: 100%;
+  border-radius: 10px;
   height: 100%;
 }
 
@@ -512,7 +518,7 @@ body {
   border: 1px solid #d4d4d4;
   border-radius: 8px;
   padding: 12px 15px;
-  z-index: 5;
+  z-index: 6;
   width: 100%;
   box-sizing: border-box;
   border-radius: 5px;
@@ -521,6 +527,11 @@ body {
 
 .flatpickr-input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Скрыть иконку в элементе ввода даты (для большинства браузеров) */
@@ -537,7 +548,7 @@ body {
 /* Стили для кастомной иконки */
 .custom-icon {
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   top: 20px;
   right: 15px;
   transform: translateY(-50%);
@@ -576,7 +587,6 @@ body {
 
 .sidebar__price-text:hover {
   border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
 .sidebar__type-text {
@@ -586,7 +596,6 @@ body {
 .sidebar__price-text-out {
   width: 148px;
   z-index: 1;
-  margin-left: -20px;
 }
 
 .sidebar__price-text.active-text {
@@ -916,6 +925,9 @@ hr {
   border-radius: 10px;
   height: 218px;
 }
+.catalog-item .swiper {
+  border-radius: 10px;
+}
 
 .catalog-item__swiper {
   max-width: 352px;
@@ -996,6 +1008,7 @@ hr {
 .catalog-item__list {
   display: flex;
   gap: 5px;
+  position: relative;
 }
 
 .catalog-item__item:hover svg > .first-path {
@@ -1263,6 +1276,9 @@ hr {
   background-position: center;
   background-size: 7px;
 }
+.swiper-btn:hover {
+  background-color: #181717;
+}
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
@@ -1450,6 +1466,7 @@ hr {
   gap: 8px;
   flex-wrap: wrap;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .object-item__label {
@@ -1457,6 +1474,8 @@ hr {
   padding: 10px 14px;
   border: 1px solid #d4d4d4;
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* применяем размытие к элементу */
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -1479,6 +1498,8 @@ hr {
   height: 45px;
   border: 1px solid #d4d4d4;
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* применяем размытие к элементу */
   outline: none;
   cursor: pointer;
   position: relative;
@@ -1520,6 +1541,8 @@ hr {
   border: 1px solid #d4d4d4;
   background-color: var(--bg-color);
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* применяем размытие к элементу */
   max-width: 400px;
   width: 100%;
   position: absolute;
@@ -1545,6 +1568,8 @@ hr {
   height: 45px;
   border: 1px solid #d4d4d4;
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* применяем размытие к элементу */
   outline: none;
   cursor: pointer;
   padding-left: 20px;
@@ -1587,6 +1612,8 @@ hr {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* применяем размытие к элементу */
 }
 .object-item-type__photo svg {
   width: 15px;
@@ -1628,6 +1655,8 @@ hr {
   line-height: 10px;
   background-color: #e0e0e0;
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* применяем размытие к элементу */
   display: inline-block;
   padding: 27px 0;
   max-width: 247px;
@@ -1659,36 +1688,69 @@ hr {
 
 .date__top {
   display: flex;
+  height: 36px;
+  gap: 200px;
   align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
+}
+.date__top .object-item-type {
+  max-width: 230px;
 }
 
 .date__title {
-  margin: 0 auto;
+  text-align: center;
 }
 
-.date__label {
+.date__label-rent {
   border-color: #4d88df;
   color: #4d88df;
 }
-
-.date__label:hover {
+.date__label-rent:hover {
   background-color: transparent;
+}
+
+.date__label-exchange {
+  border-color: #2cacaf;
+  color: #2cacaf;
+}
+.date__label-exchange:hover {
+  background-color: transparent;
+}
+
+.date__label-visit {
   border-color: #27ae60;
   color: #27ae60;
 }
+.date__label-visit:hover {
+  background-color: transparent;
+}
 
-.date__inpit[type=radio]:checked + .date__label {
-  border-color: var(--accent-color);
+.date__inpit[type=radio]:checked + .date__label-rent {
+  background-color: #4d88df;
+}
+
+.date__inpit[type=radio]:checked + .date__label-exchange {
+  background-color: #2cacaf;
+}
+
+.date__inpit[type=radio]:checked + .date__label-visit {
+  background-color: #27ae60;
 }
 
 .date__info {
   display: flex;
   gap: 10px;
 }
+.date__info .swiper-slide {
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
 
 .vanilla-calendar {
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   max-width: 381px;
   width: 100%;
 }
@@ -1748,6 +1810,11 @@ hr {
   height: 275px;
 }
 
+@media (max-width: 1120px) {
+  .date__top {
+    gap: 66px;
+  }
+}
 @media (max-width: 768px) {
   .new-object {
     max-width: 340px;
@@ -1779,14 +1846,17 @@ hr {
     align-items: stretch;
     gap: 15px;
     position: relative;
+    height: auto;
+    margin-bottom: 5px;
   }
   .date__title {
+    text-align: left;
     order: -1;
     margin: 0;
   }
   .swiper__button {
     bottom: 0;
-    top: auto;
+    top: 25px;
   }
   .object-item__title {
     font-size: 14px;
@@ -1953,6 +2023,16 @@ hr {
 }
 .sidebar-profile__right .sidebar-profile__subtext {
   max-width: 107px;
+}
+
+.catalog-item__item {
+  position: relative;
+}
+.catalog-item__item:hover .text-hover {
+  transition: all 0.2s ease-in;
+  opacity: 1;
+  visibility: visible;
+  z-index: 50;
 }
 
 .sidebar-profile__bottom {

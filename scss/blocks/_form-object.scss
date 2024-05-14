@@ -38,6 +38,7 @@
 	gap: 8px;
 	flex-wrap: wrap;
 	max-width: 400px;
+	border-radius: 10px;
 }
 
 .object-item__label {
@@ -45,6 +46,7 @@
 	padding: 10px 14px;
 	border: 1px solid #d4d4d4;
 	border-radius: 8px;
+	backdrop-filter: blur(8px); /* применяем размытие к элементу */
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
@@ -67,6 +69,8 @@
 	height: 45px;
 	border: 1px solid #d4d4d4;
 	border-radius: 8px;
+	backdrop-filter: blur(8px); /* применяем размытие к элементу */
+
 	outline: none;
 	cursor: pointer;
 	position: relative;
@@ -103,6 +107,8 @@
 	border: 1px solid #d4d4d4;
 	background-color: var(--bg-color);
 	border-radius: 8px;
+	backdrop-filter: blur(8px); /* применяем размытие к элементу */
+
 	max-width: 400px;
 	width: 100%;
 	position: absolute;
@@ -129,6 +135,8 @@
 	height: 45px;
 	border: 1px solid #d4d4d4;
 	border-radius: 8px;
+	backdrop-filter: blur(8px); /* применяем размытие к элементу */
+
 	outline: none;
 	cursor: pointer;
 	padding-left: 20px;
@@ -164,6 +172,7 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 8px;
+	backdrop-filter: blur(8px); /* применяем размытие к элементу */
 	svg {
 		width: 15px;
 		height: 15px;
@@ -204,6 +213,7 @@
 	line-height: 10px;
 	background-color: #e0e0e0;
 	border-radius: 10px;
+	backdrop-filter: blur(10px); /* применяем размытие к элементу */
 	display: inline-block;
 	padding: 27px 0;
 	max-width: 247px;
@@ -234,37 +244,64 @@
 
 .date__top {
 	display: flex;
+	height: 36px;
+	gap: 200px;
 	align-items: center;
-	margin-bottom: 23px;
+	margin-bottom: 30px;
+	.object-item-type {
+		max-width: 230px;
+	}
 }
 
 .date__title {
-	margin: 0 auto;
+	text-align: center;
 }
 
-.date__label {
+.date__label-rent {
 	border-color: #4d88df;
 	color: #4d88df;
+	&:hover {
+		background-color: transparent;
+	}
 }
-
-.date__label:hover {
-	background-color: transparent;
+.date__label-exchange {
+	border-color: #2cacaf;
+	color: #2cacaf;
+	&:hover {
+		background-color: transparent;
+	}
+}
+.date__label-visit {
 	border-color: #27ae60;
 	color: #27ae60;
+	&:hover {
+		background-color: transparent;
+	}
 }
 
-.date__inpit[type='radio']:checked + .date__label {
-	border-color: var(--accent-color);
+.date__inpit[type='radio']:checked + .date__label-rent {
+	background-color: #4d88df;
+}
+.date__inpit[type='radio']:checked + .date__label-exchange {
+	background-color: #2cacaf;
+}
+.date__inpit[type='radio']:checked + .date__label-visit {
+	background-color: #27ae60;
 }
 
 .date__info {
 	display: flex;
 	gap: 10px;
+	.swiper-slide {
+		border-radius: 10px;
+		backdrop-filter: blur(10px);
+	}
 	// overflow: scroll;
 }
 
 .vanilla-calendar {
 	border-radius: 10px;
+	backdrop-filter: blur(10px);
 	max-width: 381px;
 	width: 100%;
 }
@@ -324,6 +361,12 @@
 	height: 275px;
 }
 
+@media (max-width: 1120px) {
+	.date__top {
+		gap: 66px;
+	}
+}
+
 @media (max-width: 768px) {
 	.new-object {
 		max-width: 340px;
@@ -352,47 +395,50 @@
 	}
 	.date__top {
 		flex-direction: column;
-    align-items: stretch;
+		align-items: stretch;
 		gap: 15px;
-    position: relative;
+		position: relative;
+		height: auto;
+		margin-bottom: 5px;
 	}
 	.date__title {
+		text-align: left;
 		order: -1;
-    margin: 0;
+		margin: 0;
 	}
-  .swiper__button {
-    bottom: 0;
-    top: auto;
-  }
-  .object-item__title {
-    font-size: 14px;
-    max-width: 100%;
-  }
-  .object-item-type__column {
-    gap: 10px;
-  }
-  .new-object__inner {
-    gap: 15px;
-  }
-  .object-item__number {
-    padding-left: 15px;
-    &::placeholder {
-      font-size: 12px;
-    }
-  }
-  .new-object__btns {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .new-object__btn {
-    max-width: 100%;
-  }
-  .object-btn-primary {
-    margin-right: 0;
-  }
-  .rules {
-    text-align: center;
-    max-width: 273px;
-  }
+	.swiper__button {
+		bottom: 0;
+		top: 25px;
+	}
+	.object-item__title {
+		font-size: 14px;
+		max-width: 100%;
+	}
+	.object-item-type__column {
+		gap: 10px;
+	}
+	.new-object__inner {
+		gap: 15px;
+	}
+	.object-item__number {
+		padding-left: 15px;
+		&::placeholder {
+			font-size: 12px;
+		}
+	}
+	.new-object__btns {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.new-object__btn {
+		max-width: 100%;
+	}
+	.object-btn-primary {
+		margin-right: 0;
+	}
+	.rules {
+		text-align: center;
+		max-width: 273px;
+	}
 }

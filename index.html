@@ -85,8 +85,26 @@
 						</div>
 						<div class="sidebar__price">
 							<div class="sidebar__price-type">
-								<button class="sidebar__price-text active-text">Посуточно</button>
-								<button class="sidebar__price-text sidebar__price-text-out">Помесячно</button>
+								<input
+									class="object-item__input"
+									type="radio"
+									id="type-rental"
+									name="rental"
+									value="Посуточно"
+									checked
+								/>
+								<label class="object-item__label sidebar__price-text" for="type-rental">Посуточно</label>
+								<input
+									class="object-item__input "
+									type="radio"
+									id="type-rental2"
+									name="rental"
+									value="Помесячно"
+								/>
+								<label class="object-item__label sidebar__price-text sidebar__price-text-out" for="type-rental2">Помесячно</label>
+
+								<!-- <button class="sidebar__price-text active-text">Посуточно</button> -->
+								<!-- <button class="sidebar__price-text sidebar__price-text-out">Помесячно</button> -->
 							</div>
 							<div class="sidebar__price-counts">
 								<div class="sidebar__price-count">
@@ -113,38 +131,38 @@
 							<h2 class="sidebar__title">Тип недвижимости</h2>
 							<div class="sidebar__items sidebar__items-type">
 								<label for="sleepingarea" class="label-btn">
-									<input type="radio" id="sleepingarea" name="estate" value="Спальное место" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="sleepingarea" name="estate" value="Спальное место" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Спальное место</span>
 								</label>
 								<label for="room" class="label-btn">
-									<input type="radio" id="room" name="estate" value="Комната" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="room" name="estate" value="Комната" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Комната</span>
 								</label>
 								<label for="studio" class="label-btn">
-									<input type="radio" id="studio" name="estate" value="Студия" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="studio" name="estate" value="Студия" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Студия</span>
 								</label>
 								<label for="apartment" class="label-btn">
-									<input type="radio" id="apartment" name="estate" value="Квартира" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="apartment" name="estate" value="Квартира" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Квартира</span>
 								</label>
 								<label for="house-country" class="label-btn">
-									<input type="radio" id="house-country" name="estate" value="Дача" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="house-country" name="estate" value="Дача" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Дача</span>
 								</label>
 								<label for="part-house" class="label-btn">
-									<input type="radio" id="part-house" name="estate" value="Часть дома" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="part-house" name="estate" value="Часть дома" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Часть дома</span>
 								</label>
 								<label for="house" class="label-btn">
-									<input type="radio" id="house" name="estate" value="Дом" />
-									<span class="custom-radio"></span>
+									<input type="checkbox" id="house" name="estate" value="Дом" />
+									<span class="custom-checkbox"></span>
 									<span class="category-label">Дом</span>
 								</label>
 							</div>
@@ -189,41 +207,41 @@
 						<hr />
 						<div class="sidebar__footer">
 							<label for="child" class="label-btn">
-								<input type="radio" id="child" name="footer" value="Можно с детьми " />
-								<span class="custom-radio"></span>
+								<input type="checkbox" id="child" name="footer" value="Можно с детьми " />
+								<span class="custom-checkbox"></span>
 								<span class="category-label">Можно с детьми </span>
 							</label>
 							<label for="disabilities" class="label-btn">
 								<input
-									type="radio"
+									type="checkbox"
 									id="disabilities"
 									name="footer"
 									value="Доступно для людей с ограниченными возможностями"
 								/>
-								<span class="custom-radio"></span>
+								<span class="custom-checkbox"></span>
 								<span class="category-label"
 									>Доступно для людей с <br />
 									ограниченными возможностями</span
 								>
 							</label>
 							<label for="animals" class="label-btn">
-								<input type="radio" id="animals" name="footer" value="Можно с животными" />
-								<span class="custom-radio"></span>
+								<input type="checkbox" id="animals" name="footer" value="Можно с животными" />
+								<span class="custom-checkbox"></span>
 								<span class="category-label">Можно с животными</span>
 							</label>
 							<label for="parking" class="label-btn">
-								<input type="radio" id="parking" name="footer" value="Есть место для парковки" />
-								<span class="custom-radio"></span>
+								<input type="checkbox" id="parking" name="footer" value="Есть место для парковки" />
+								<span class="custom-checkbox"></span>
 								<span class="category-label">Есть место для парковки</span>
 							</label>
 							<label for="help" class="label-btn">
-								<input type="radio" id="help" name="footer" value="Помощь с трансфером" />
-								<span class="custom-radio"></span>
+								<input type="checkbox" id="help" name="footer" value="Помощь с трансфером" />
+								<span class="custom-checkbox"></span>
 								<span class="category-label">Помощь с трансфером</span>
 							</label>
 							<label for="smoke" class="label-btn">
-								<input type="radio" id="smoke" name="footer" value="Можно курить" />
-								<span class="custom-radio"></span>
+								<input type="checkbox" id="smoke" name="footer" value="Можно курить" />
+								<span class="custom-checkbox"></span>
 								<span class="category-label">Можно курить</span>
 							</label>
 						</div>
@@ -407,6 +425,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -428,6 +447,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -467,6 +487,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -500,6 +521,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -533,6 +555,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -566,6 +589,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -587,6 +611,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 												</ul>
 											</div>
@@ -769,6 +794,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -790,6 +816,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -829,6 +856,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -862,6 +890,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -895,6 +924,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -928,6 +958,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -949,6 +980,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 												</ul>
 											</div>
@@ -1131,6 +1163,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1152,6 +1185,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1191,6 +1225,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1224,6 +1259,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1257,6 +1293,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1290,6 +1327,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1311,6 +1349,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 												</ul>
 											</div>
@@ -1493,6 +1532,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1514,6 +1554,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1553,6 +1594,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1586,6 +1628,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1619,6 +1662,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1652,6 +1696,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1673,6 +1718,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 												</ul>
 											</div>
@@ -1855,6 +1901,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1876,6 +1923,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -1915,6 +1963,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1948,6 +1997,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link">
@@ -1981,6 +2031,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -2014,6 +2065,7 @@
 																</defs>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 													<li class="catalog-item__item">
 														<a href="#!" class="catalog-item__link"
@@ -2035,6 +2087,7 @@
 																/>
 															</svg>
 														</a>
+														<p class="text-hover">E-mail подтвержден</p>
 													</li>
 												</ul>
 											</div>
@@ -2314,6 +2367,8 @@
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+		<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
 		<script src="./js/swiper.js"></script>
 		<script src="./js/sidebar.js"></script>
 		<script src="./js/sort.js"></script>

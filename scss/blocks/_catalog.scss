@@ -13,6 +13,9 @@
 	background-color: #fff;
 	border-radius: 10px;
 	height: 218px;
+	.swiper {
+		border-radius: 10px;
+	}
 }
 .catalog-item__swiper {
 	max-width: 352px;
@@ -85,6 +88,7 @@
 .catalog-item__list {
 	display: flex;
 	gap: 5px;
+	position: relative;
 }
 // .catalog-item__item {
 // }

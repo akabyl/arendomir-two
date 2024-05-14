@@ -12,6 +12,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 7px;
+	&:hover {
+			background-color: #181717;
+	}
 }
 
 .swiper-button-prev:after,

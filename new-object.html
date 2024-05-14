@@ -323,7 +323,9 @@
 										name="date-check"
 										value="Аренда"
 									/>
-									<label class="object-item__label date__label" for="date-rent">Аренда</label>
+									<label class="object-item__label date__label date__label-rent" for="date-rent"
+										>Аренда</label
+									>
 									<input
 										class="object-item__input date__inpit"
 										type="radio"
@@ -331,7 +333,9 @@
 										name="date-check"
 										value="Обмен"
 									/>
-									<label class="object-item__label date__label" for="date-exchange">Обмен</label>
+									<label class="object-item__label date__label date__label-exchange" for="date-exchange"
+										>Обмен</label
+									>
 									<input
 										class="object-item__input date__inpit"
 										type="radio"
@@ -340,31 +344,46 @@
 										checked
 										value="Визит"
 									/>
-									<label class="object-item__label date__label" for="date-visit">Визит</label>
+									<label class="object-item__label date__label date__label-visit" for="date-visit"
+										>Визит</label
+									>
 								</div>
+
 								<h3 class="date__title">Выберите доступные даты для этого объекта</h3>
-								<button type="button" class="swiper__button swiper__prev">
-									<svg
-										width="7"
-										height="12"
-										viewBox="0 0 7 12"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M6 11L1 6L6 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</button>
-								<button type="button" class="swiper__button swiper__next">
-									<svg
-										width="7"
-										height="12"
-										viewBox="0 0 7 12"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</button>
+								<div class="swiper__buttons">
+									<button type="button" class="swiper__button swiper__prev">
+										<svg
+											width="7"
+											height="12"
+											viewBox="0 0 7 12"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M6 11L1 6L6 1"
+												stroke="#333333"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+									<button type="button" class="swiper__button swiper__next">
+										<svg
+											width="7"
+											height="12"
+											viewBox="0 0 7 12"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 11L6 6L1 1"
+												stroke="#333333"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
 							</div>
 							<div class="date__info">
 								<div class="swiper">
