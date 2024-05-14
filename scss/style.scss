@@ -1,0 +1,19 @@
+@import './base/reset';
+@import './base/vars';
+@import './base/breakpoints';
+@import './base/base';
+
+// blocks
+
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/main';
+@import './blocks/sidebar';
+@import './blocks/section';
+@import './blocks/head';
+@import './blocks/sort';
+@import './blocks/catalog';
+@import './blocks/swiper';
+@import './blocks/mobile-info';
+@import './blocks/form-object';
+@import './blocks/object';

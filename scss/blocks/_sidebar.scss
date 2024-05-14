@@ -1,0 +1,352 @@
+.sidebar {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	// .sidebar__category
+	&__category {
+	}
+	// .sidebar__title
+	&__title {
+		font-weight: 500;
+		line-height: 12.6px;
+		margin-bottom: 15px;
+	}
+	// .sidebar__items
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+.label-btn {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: var(--sidebar-color);
+	&:hover .custom-radio {
+		border-color: #2cacaf;
+	}
+}
+/******************************************************** RADIO **************************************/
+
+/* Скрытие стандартного флажка */
+.label-btn input[type='radio'] {
+	position: absolute;
+	opacity: 0;
+}
+.label-btn input[type='checkbox'] {
+	position: absolute;
+	opacity: 0;
+}
+
+/* Стили для кастомного флажка */
+.custom-radio {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #d4d4d4;
+	border-radius: 4px;
+	margin-right: 10px;
+	position: relative;
+	transition: border-color 0.2s ease-in;
+}
+
+.custom-checkbox {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #d4d4d4;
+	border-radius: 4px;
+	margin-right: 10px;
+	position: relative;
+	transition: border-color 0.2s ease-in;
+}
+
+/* Стили для отображения выбранного кастомного флажка */
+.custom-radio::after {
+	content: '';
+	width: 11px;
+	height: 12px;
+	background-image: url('./../assets/img/icons/sidebar/sidebar-check.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: all 0.2s ease;
+} /* Стили для отображения выбранного кастомного флажка */
+.custom-checkbox::after {
+	content: '';
+	width: 11px;
+	height: 12px;
+	background-image: url('./../assets/img/icons/sidebar/sidebar-check.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: all 0.2s ease;
+}
+
+/* Стили для выбранного кастомного флажка */
+.label-btn input[type='radio']:checked + .custom-radio::after {
+	transform: translate(-50%, -50%) scale(1);
+} /* Стили для выбранного кастомного флажка */
+.label-btn input[type='checkbox']:checked + .custom-checkbox::after {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.label-btn input[type='radio']:checked + .custom-radio {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+.label-btn input[type='checkbox']:checked + .custom-checkbox {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+/* Стили для текста категории */
+.category-label {
+	font-size: 14px;
+	max-width: 213px;
+}
+
+/******************************************************** DATE **************************************/
+
+.sidebar__date-inner {
+	position: relative;
+	max-width: 263px;
+	width: 100%;
+	height: 100%;
+}
+.date-input {
+	position: relative;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	padding: 12px 15px;
+	z-index: 5;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.flatpickr-input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+}
+/* Скрыть иконку в элементе ввода даты (для большинства браузеров) */
+.flatpickr-input[type='date']::-webkit-inner-spin-button,
+.flatpickr-input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+/* Скрыть иконку в элементе ввода даты (для Edge) */
+.flatpickr-input[type='date']::-ms-clear {
+	display: none;
+}
+/* Стили для кастомной иконки */
+.custom-icon {
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	right: 15px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.flatpickr-calendar {
+	// top: 360px !important;
+	// left: 7% !important;
+	max-width: 263px;
+	width: 100%;
+}
+
+/******************************************************** PRICE **************************************/
+
+.sidebar__price {
+}
+.sidebar__price-type {
+	width: 263px;
+	display: flex;
+	gap: 5px;
+	margin-bottom: 20px;
+}
+.sidebar__type {
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	button {
+		// max-width: 112px;
+	}
+}
+.sidebar__price-text {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	padding: 15px 34px;
+	// width: 132px;
+	transition: all 0.2s ease-in;
+	line-height: 14px;
+	transition: all 0.2s ease-in;
+}
+.sidebar__price-text:hover {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+.sidebar__type-text {
+	padding: 15px 20px;
+}
+.sidebar__price-text-out {
+	width: 148px;
+	z-index: 1;
+	margin-left: -20px;
+}
+.sidebar__price-text.active-text {
+	background-color: var(--accent-color);
+	color: #fff;
+}
+.sidebar__price-counts {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	margin-bottom: 36px;
+}
+.sidebar__price-count {
+	max-width: 127px;
+	flex-grow: 1;
+	padding: 14px 10px;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	display: flex;
+	/* Скрытие стрелок у элемента input типа number */
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input {
+		max-width: 50px;
+		margin-left: 9px;
+	}
+	&:hover {
+		border-color: var(--accent-color);
+	}
+	.currency {
+		color: var(--subtext-color);
+	}
+	.currency-last {
+		margin-left: auto;
+	}
+}
+
+// slider range
+
+.range {
+	position: relative;
+	// min-height: 31px;
+	p {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 12px;
+	}
+}
+
+.box {
+	display: block;
+	background-color: var(--accent-color);
+	color: #043643;
+	font-size: 0.8rem;
+	width: 100%;
+	line-height: 2rem;
+	height: 2rem;
+	letter-spacing: 2px;
+}
+
+custom-slider {
+	transform: scale(2);
+}
+.range-wrapper {
+	h2 {
+		margin-bottom: 15px;
+	}
+}
+.range-count {
+	// position: absolute;
+	// top: -25px;
+	font-size: 12px;
+	line-height: 12px;
+	color: var(--subtext-color);
+}
+.range__left {
+	left: 2px;
+}
+.range__right {
+	right: 2px;
+}
+
+hr {
+	height: 2px;
+	background-color: #d4d4d4;
+}
+
+.sidebar__footer {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+
+// @media (max-width: 1367px) {}
+@media (max-width: 1280px) {
+	.custom-icon {
+		height: 19px;
+	}
+}
+@media (max-width: 1120px) {
+	.sidebar__items-top {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: center;
+	}
+	.custom-radio {
+		margin-right: 6px;
+	}
+	.custom-icon {
+		width: 17px;
+		height: 17px;
+	}
+	.sidebar__price-type {
+		width: 249px;
+	}
+	.sidebar__price-text {
+		padding: 15px 30px;
+	}
+	.sidebar__items-type {
+		display: grid;
+		grid-template-columns: 127px minmax(0, 98px);
+		column-gap: 24px;
+		.label-btn {
+			width: 100%;
+		}
+	}
+	.sidebar__price-counts {
+		margin-bottom: 11px;
+	}
+	.sidebar__price-text {
+		padding: 15px 20px;
+	}
+}
+@media (max-width: 768px) {
+	.sidebar {
+		display: none;
+	}
+	.sidebar__price-counts {
+		justify-content: flex-start;
+	}
+}
+@media (max-width: 576px) {
+}

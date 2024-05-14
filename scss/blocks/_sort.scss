@@ -1,0 +1,35 @@
+// .sort {
+// }
+.sort__list {
+	display: flex;
+	gap: 12px;
+}
+.sort__item {
+	transition: all 0.2s ease-in;
+	&-main {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&:hover {
+		color: var(--accent-color);
+		transition: all 0.2s ease-in;
+	}
+}
+.sort__subitem {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.sort__item-main.clicked ~ .sort__subitem {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sort__item-main.clicked .animated-svg {
+	transition: all 0.2s ease-in;
+	transform: rotate(-90deg);
+}
+
+// .sort__link {
+// }

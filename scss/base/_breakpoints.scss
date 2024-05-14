@@ -1,0 +1,41 @@
+/* breakpoints.css */
+
+/* Медиа-запросы для десктопных устройств */
+@media (max-width: 1367px) {
+	:root {
+		--desktop-xl: true;
+	}
+}
+
+/* Медиа-запросы для десктопных устройств */
+@media (max-width: 1280px) {
+	:root {
+		--desktop-max: true;
+	}
+}
+
+/* Медиа-запросы для десктопных устройств */
+@media (max-width: 1024px) {
+	:root {
+		--desktop-mini: true;
+	}
+}
+
+/* Медиа-запросы для планшетов */
+@media (max-width: 768px) {
+	:root {
+		--tablet: true;
+	}
+} /* Медиа-запросы для планшетов */
+@media (max-width: 640px) {
+	:root {
+		--tablet-mini: true;
+	}
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (min-width: 480px) {
+	:root {
+		--mobile: true;
+	}
+}

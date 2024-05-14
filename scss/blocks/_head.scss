@@ -1,0 +1,139 @@
+// .head {
+// }
+.head__top {
+	display: flex;
+	gap: 15px;
+	align-items: end;
+	margin-bottom: 20px;
+}
+.head__title {
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 28px;
+	color: var(--title-color);
+}
+.head__btn {
+	font-weight: 500;
+	line-height: 12.6px;
+	color: var(--subtext-color);
+	text-decoration: underline;
+	transition: color 0.2s ease-in;
+	&:hover {
+		color: var(--accent-color);
+	}
+}
+.head__sort {
+	margin-bottom: 31px;
+}
+
+.head__items {
+	display: none;
+	gap: 8px;
+	align-items: center;
+	margin-bottom: 24px;
+}
+.head__item {
+	max-width: 116px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 14px;
+	background-color: #fff;
+	color: #302d38;
+	border-radius: 10px;
+	position: relative;
+}
+.head__item-fillter {
+}
+.head__item-text {
+	font-size: 12px;
+	line-height: 10.8px;
+}
+.info-item {
+	position: absolute;
+	top: -5px;
+	right: -3px;
+	width: 15px;
+	height: 15px;
+	background-color: var(--accent-color);
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	align-content: center;
+	display: inline-block;
+	font-size: 10px;
+	line-height: 9px;
+}
+.head__item-category {
+}
+.head__item-sort {
+	position: relative;
+	padding: 10px 15px;
+}
+.head__item-list {
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9;
+	position: absolute;
+	background-color: #fff;
+	padding: 3px 12px 10px;
+	border-radius: 0 0 10px 10px;
+	max-width: 116px;
+	li {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 10.8px;
+		margin-bottom: 10px;
+		transition: color 0.2s ease-in;
+		&:hover {
+			color: var(--accent-color);
+		}
+	}
+}
+.head__item-wrapper {
+	max-width: 116px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	&:hover {
+		border-radius: 10px 10px 0 0;
+		.head__item-list {
+			transition: all 0.2s ease-in;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@media (max-width: 1120px) {
+	.head__top {
+		gap: 0;
+		justify-content: space-between;
+	}
+	.head__title {
+		font-size: 28px;
+		line-height: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.head__top {
+		flex-direction: column;
+		align-items: start;
+		gap: 8px;
+	}
+	.head__btn {
+		order: -1;
+	}
+	.head__title {
+		font-size: 20px;
+	}
+	.head__items {
+		display: flex;
+	}
+	.head__sort {
+		display: none;
+	}
+	.head__item-sort {
+	}
+}
