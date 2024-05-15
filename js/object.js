@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			const selectedOption = event.target.textContent;
 			header.textContent = selectedOption;
 			list.style.display = 'none';
-			list.classList.remove('active-transform');
+			select.classList.remove('active-transform');
 		});
 	});
 });
