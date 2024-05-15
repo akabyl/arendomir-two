@@ -1,0 +1,124 @@
+.main__profile {
+}
+.profile {
+	display: flex;
+	gap: 10px;
+}
+.profile__sidebar {
+	background-color: #fff;
+	padding: 18px;
+	border-radius: 13px;
+	max-width: 192px;
+	width: 100%;
+}
+.profile__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.profile__item {
+}
+.profile__link {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	&-active {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--accent-color);
+	}
+}
+.profile__content {
+	max-width: 761px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.profile__section {
+	background-color: #fff;
+	border-radius: 13px;
+}
+.section-profile {
+	padding: 15px 20px;
+}
+.section-profile__inner {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+.section-profile__avatar {
+}
+.section-profile__right {
+}
+.section-profile__user {
+	margin-bottom: 7px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.section-profile__name {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 19px;
+	color: var(--title-color);
+}
+.section-profile__rate {
+	width: 16px;
+	height: 16px;
+}
+.section-profile__count {
+}
+.section-profile__text {
+	font-size: 14px;
+	line-height: 12px;
+	color: #828282;
+}
+
+.achievements {
+	padding: 15px 20px 22px 20px;
+}
+.achievements__title {
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 28px;
+	color: var(--title-color);
+	margin-bottom: 18px;
+}
+.profile-title {
+}
+.achievements__list {
+}
+.achievements__item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #224646;
+	opacity: 0.9;
+	max-width: 136px;
+	border-radius: 13px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+	padding: 3px;
+  padding-bottom: 25px;
+	color: #fff;
+  text-align: center;
+}
+.achievements__img-wrap {
+	background-color: #fff;
+	max-width: 130px;
+	border-radius: 12px;
+}
+.achievements__text {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 13px;
+  text-wrap: balance;
+}
+.achievements__span {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+	opacity: 0.8;
+  text-wrap: balance;
+}

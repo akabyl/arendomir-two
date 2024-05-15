@@ -213,7 +213,6 @@
 	line-height: 10px;
 	background-color: #e0e0e0;
 	border-radius: 10px;
-	backdrop-filter: blur(10px); /* применяем размытие к элементу */
 	display: inline-block;
 	padding: 27px 0;
 	max-width: 247px;
@@ -294,16 +293,15 @@
 	gap: 10px;
 	.swiper-slide {
 		border-radius: 10px;
-		backdrop-filter: blur(10px);
 	}
 	// overflow: scroll;
 }
 
 .vanilla-calendar {
 	border-radius: 10px;
-	backdrop-filter: blur(10px);
 	max-width: 381px;
 	width: 100%;
+	padding: 30px 35px;
 }
 
 .vanilla-calendar-week {
@@ -364,6 +362,9 @@
 @media (max-width: 1120px) {
 	.date__top {
 		gap: 66px;
+	}
+	.vanilla-calendar {
+		padding: 20px;
 	}
 }
 

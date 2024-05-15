@@ -3,11 +3,12 @@
 @import './base/breakpoints';
 @import './base/base';
 
-// blocks
-
+// blocks main
 @import './blocks/header';
 @import './blocks/menu';
 @import './blocks/main';
+
+// object pages - new object pages - catalog pages
 @import './blocks/sidebar';
 @import './blocks/section';
 @import './blocks/head';
@@ -17,3 +18,8 @@
 @import './blocks/mobile-info';
 @import './blocks/form-object';
 @import './blocks/object';
+
+// pages Profile
+@import './blocks/profile';
+
+

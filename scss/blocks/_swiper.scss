@@ -13,7 +13,7 @@
 	background-position: center;
 	background-size: 7px;
 	&:hover {
-			background-color: #181717;
+		background-color: #181717;
 	}
 }
 
@@ -56,6 +56,12 @@
 	object-fit: cover;
 }
 
+.slider {
+	.swiper-slide {
+		background-color: var(--bg-color);
+	}
+}
+
 // .swiper {
 // 	width: 100%;
 // 	height: 300px;
@@ -66,11 +72,25 @@
 .swiper-slide {
 	background-size: cover;
 	background-position: center;
+	iframe {
+		width: 100%;
+		height: 418px;
+	}
 }
 
 .mySwiper2 {
 	height: 80%;
 	width: 100%;
+	border-radius: 13px;
+}
+
+.mySwiper-mini {
+	.swiper-slide {
+		border-radius: 8px;
+		img {
+			border-radius: 8px;
+		}
+	}
 }
 
 .mySwiper {
@@ -88,6 +108,7 @@
 }
 
 .mySwiper .swiper-slide-thumb-active {
+	border-radius: 8px;
 	border-color: #4d88df;
 }
 
@@ -99,9 +120,69 @@
 }
 
 @media (max-width: 1367px) {
+	.swiper-slide {
+		iframe {
+			height: 310px;
+		}
+	}
 }
+@media (max-width: 1120px) {
+	.swiper-slide {
+		iframe {
+			height: 227px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.swiper-slide {
+		iframe {
+			height: 329px;
+		}
+	}
+	.mySwiper2 {
+		.swiper-slide img {
+			height: 329px;
+		}
+	}
+}
+
+.swiper-button-pos {
+	z-index: 9999999;
+}
+
+.video-slide {
+	position: relative;
+	aspect-ratio: 16 / 9; // always use 16/9 video
+	container-type: size;
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 14cqh); // show controls
+		clip-path: polygon(
+			0% 0%,
+			0% 100%,
+			44% 100%,
+			44% 49%,
+			56% 49%,
+			56% 67%,
+			0% 67%,
+			0% 100%,
+			100% 100%,
+			100% 0%
+		); // show play button
+	}
+}
+
 @media (max-width: 768px) {
 	.swiper-slide img {
 		width: 100%;
 	}
+}
+@media (max-width: 576px) {
 }

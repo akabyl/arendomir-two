@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.mySwiper', {
 	loop: true,
 	spaceBetween: 10,
@@ -44,13 +45,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const calendarSide = new VanillaCalendar('#calendar-side', {
 	date: {
-		today: new Date('2024-05-14'),
+		today: new Date(),
 	},
 	settings: {
 		lang: 'ru',
 		range: {
-			// disablePast: true,
-			// disableGaps: true,
+			// disableAllDays: true,
+		},
+		visibility: {
+			today: false,
+			daysOutside: false,
 		},
 	},
 });
@@ -59,6 +63,7 @@ calendarSide.init();
 const headTitle = document.querySelector('.vanilla-calendar-header');
 const paragraph = document.createElement('p');
 paragraph.textContent = 'Календарь дат';
+paragraph.classList.add('paragraph-c');
 const firstChild = headTitle.firstChild;
 
 headTitle.insertBefore(paragraph, firstChild);
@@ -70,7 +75,7 @@ const calendarContent = document.querySelector('.vanilla-calendar-wrapper');
 const buttonBlock = document.createElement('div');
 buttonBlock.classList.add('calendar-inner-div');
 // Создание кнопки "Доступно"
-const availableButton = document.createElement('button');
+const availableButton = document.createElement('div');
 availableButton.textContent = 'Доступно';
 // Добавление класса
 availableButton.classList.add('available-button');
@@ -78,7 +83,7 @@ availableButton.classList.add('calen-button');
 availableButton.classList.add('active');
 
 // Создание кнопки "Недоступно"
-const unavailableButton = document.createElement('button');
+const unavailableButton = document.createElement('div');
 unavailableButton.textContent = 'Недоступно';
 // Добавление класса
 unavailableButton.classList.add('unavailable-button');

@@ -7,7 +7,10 @@
 		<link rel="icon" href="./assets/img/icons/logo.svg" />
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+		<link
+			href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
 		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
@@ -51,6 +54,17 @@
 					class="swiper mySwiper2 mob-slider"
 				>
 					<div class="swiper-wrapper">
+						<!-- <div class="swiper-slide" id='youtube-slide'>
+							<iframe
+								class="video-slide"
+								src="https://www.youtube.com/embed/3H3GwJdwOR8?si=XeetlPDJfYTnpN0J&amp;controls=0&amp;start=1"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div> -->
 						<div class="swiper-slide">
 							<img src="./assets/img/object/slide1.png" />
 						</div>
@@ -82,18 +96,18 @@
 							<img src="./assets/img/object/slide1.png" />
 						</div>
 					</div>
-            <div class="swiper-pagination"></div>
-					<div class="swiper-button-next">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next swiper-button-pos">
 						<img src="./assets/img/object/slider-arrow-nex.png" alt="" />
 					</div>
-					<div class="swiper-button-prev">
+					<div class="swiper-button-prev swiper-button-pos">
 						<img src="./assets/img/object/slider-arrow-prev.png" alt="" />
 					</div>
 				</div>
 				<div class="object-top">
 					<h2 class="object-top__title">3-к комнатная квартира с 5 спальными местами</h2>
 					<div class="object-top__location">
-						<p>
+						<a href="#!">
 							<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill-rule="evenodd"
@@ -109,7 +123,7 @@
 								/>
 							</svg>
 							<span class="location-text">г. Москва, ул. Свободы</span>
-						</p>
+						</a>
 						<p>
 							<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -168,6 +182,16 @@
 								class="swiper mySwiper2"
 							>
 								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<iframe
+											src="https://www.youtube.com/embed/3H3GwJdwOR8?si=XeetlPDJfYTnpN0J&amp;controls=0&amp;start=1"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin"
+											allowfullscreen
+										></iframe>
+									</div>
 									<div class="swiper-slide">
 										<img src="./assets/img/object/slide1.png" />
 									</div>
@@ -371,12 +395,24 @@
 							<h2 class="rewiews__title object-top__title">Отзывы об этом объекте</h2>
 							<div class="rewiews__info">
 								<div class="rewiews__top">
-									<div class="rewiews__user">
+									<a class="rewiews__user" href="#!">
 										<img class="rewiews__img" src="./assets/img/header/avatar.jpg" alt="" />
 										<div class="rewiews__user-info">
 											<p class="rewiews__name">Гость - Анатолий Г.</p>
 											<span class="rewiews__span">
-												<img src="./assets/img/catalog/rate.png" alt="" />
+												<svg
+													width="19"
+													height="18"
+													viewBox="0 0 19 18"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.5 0L11.6329 6.56434H18.535L12.9511 10.6213L15.084 17.1857L9.5 13.1287L3.91604 17.1857L6.04892 10.6213L0.464963 6.56434H7.36712L9.5 0Z"
+														fill="#F2C94C"
+													/>
+												</svg>
+
 												3.1 на основании 3 отзывов
 											</span>
 										</div>
@@ -384,7 +420,7 @@
 											<img src="./assets/img/icons/object-block/rewiews-date.svg" alt="" />
 											<span>20-23 января 2024 г. </span>
 										</p>
-									</div>
+									</a>
 								</div>
 								<ul class="rewiews__list">
 									<li class="rewiews__item">
@@ -393,11 +429,66 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -415,11 +506,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -435,11 +582,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div></div
 										></label>
 										<div class="rewiews__text">
@@ -452,12 +655,24 @@
 							</div>
 							<div class="rewiews__info">
 								<div class="rewiews__top">
-									<div class="rewiews__user">
-										<img class="rewiews__img" src="./assets/img/header/avatar.jpg" alt="" />
+									<a class="rewiews__user" href="#!">
+										<img class="rewiews__img" src="./assets/img/profile/avatar.png" alt="" />
 										<div class="rewiews__user-info">
 											<p class="rewiews__name">Гость - Анатолий Г.</p>
 											<span class="rewiews__span">
-												<img src="./assets/img/catalog/rate.png" alt="" />
+												<svg
+													width="15"
+													height="14"
+													viewBox="0 0 15 14"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+														fill="#F2C94C"
+													/>
+												</svg>
+
 												3.1 на основании 3 отзывов
 											</span>
 										</div>
@@ -465,7 +680,7 @@
 											<img src="./assets/img/icons/object-block/rewiews-date.svg" alt="" />
 											<span>20-23 января 2024 г. </span>
 										</p>
-									</div>
+									</a>
 								</div>
 								<ul class="rewiews__list">
 									<li class="rewiews__item">
@@ -474,11 +689,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -496,11 +767,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -516,11 +843,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div></div
 										></label>
 										<div class="rewiews__text">
@@ -533,12 +916,24 @@
 							</div>
 							<div class="rewiews__info">
 								<div class="rewiews__top">
-									<div class="rewiews__user">
+									<a class="rewiews__user" href="#!">
 										<img class="rewiews__img" src="./assets/img/header/avatar.jpg" alt="" />
 										<div class="rewiews__user-info">
 											<p class="rewiews__name">Гость - Анатолий Г.</p>
 											<span class="rewiews__span">
-												<img src="./assets/img/catalog/rate.png" alt="" />
+												<svg
+													width="15"
+													height="14"
+													viewBox="0 0 15 14"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+														fill="#F2C94C"
+													/>
+												</svg>
+
 												3.1 на основании 3 отзывов
 											</span>
 										</div>
@@ -546,7 +941,7 @@
 											<img src="./assets/img/icons/object-block/rewiews-date.svg" alt="" />
 											<span>20-23 января 2024 г. </span>
 										</p>
-									</div>
+									</a>
 								</div>
 								<ul class="rewiews__list">
 									<li class="rewiews__item">
@@ -555,11 +950,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -577,11 +1028,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div>
 											</div>
 										</label>
@@ -597,11 +1104,67 @@
 											<div class="rewiews__item-top">
 												<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 												<div class="rewiews__rate">
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate.png" alt="" />
-													<img src="./assets/img/catalog/rate-no.png" alt="" />
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#F2C94C"
+														/>
+													</svg>
+
+													<svg
+														width="14"
+														height="13"
+														viewBox="0 0 14 13"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+															fill="#E0E0E0"
+														/>
+													</svg>
 												</div></div
 										></label>
 										<div class="rewiews__text">
@@ -634,7 +1197,19 @@
 													<div class="rewiews__user-info">
 														<p class="rewiews__name">Гость - Анатолий Г.</p>
 														<span class="rewiews__span">
-															<img src="./assets/img/catalog/rate.png" alt="" />
+															<svg
+																width="15"
+																height="14"
+																viewBox="0 0 15 14"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																	fill="#F2C94C"
+																/>
+															</svg>
+
 															3.1 на основании 3 отзывов
 														</span>
 													</div>
@@ -651,11 +1226,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -673,11 +1304,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -693,11 +1380,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div></div
 													></label>
 													<div class="rewiews__text">
@@ -717,7 +1460,19 @@
 													<div class="rewiews__user-info">
 														<p class="rewiews__name">Гость - Анатолий Г.</p>
 														<span class="rewiews__span">
-															<img src="./assets/img/catalog/rate.png" alt="" />
+															<svg
+																width="15"
+																height="14"
+																viewBox="0 0 15 14"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																	fill="#F2C94C"
+																/>
+															</svg>
+
 															3.1 на основании 3 отзывов
 														</span>
 													</div>
@@ -734,11 +1489,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -756,11 +1567,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -776,11 +1643,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div></div
 													></label>
 													<div class="rewiews__text">
@@ -801,7 +1724,19 @@
 													<div class="rewiews__user-info">
 														<p class="rewiews__name">Гость - Анатолий Г.</p>
 														<span class="rewiews__span">
-															<img src="./assets/img/catalog/rate.png" alt="" />
+															<svg
+																width="15"
+																height="14"
+																viewBox="0 0 15 14"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																	fill="#F2C94C"
+																/>
+															</svg>
+
 															3.1 на основании 3 отзывов
 														</span>
 													</div>
@@ -818,11 +1753,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект соответствует описанию</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -840,11 +1831,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Объект был готов к визиту</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div>
 														</div>
 													</label>
@@ -860,11 +1907,67 @@
 														<div class="rewiews__item-top">
 															<h3 class="rewiews__info-title">Комфорт во время пребывания</h3>
 															<div class="rewiews__rate">
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate.png" alt="" />
-																<img src="./assets/img/catalog/rate-no.png" alt="" />
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+																<svg
+																	width="15"
+																	height="14"
+																	viewBox="0 0 15 14"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+																		fill="#F2C94C"
+																	/>
+																</svg>
+
+																<svg
+																	width="14"
+																	height="13"
+																	viewBox="0 0 14 13"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
+																		fill="#E0E0E0"
+																	/>
+																</svg>
 															</div></div
 													></label>
 													<div class="rewiews__text">
@@ -915,26 +2018,38 @@
 								</a>
 							</div>
 						</section>
-            <button class="complain complain-mobile">Пожаловаться</button>
+						<button class="complain complain-mobile">Пожаловаться</button>
 					</div>
 					<div class="sidebar-object">
 						<div id="main">
-							<button class="sidebar-object__btn btn-accent" type="button">КАТЕГОРИЯ АРЕНДА</button>
+							<div class="sidebar-object__btn btn-accent" type="button">КАТЕГОРИЯ АРЕНДА</div>
 							<div class="sidebar-object__profile sidebar-profile">
 								<div class="sidebar-profile__top">
-									<div class="sidebar-profile__left">
-										<img class="avatar" src="./assets/img/header/avatar.jpg" alt="" />
+									<a class="sidebar-profile__left" href="#!">
+										<img class="avatar" src="./assets/img/profile/ava2.png" alt="" />
 										<div class="sidebar-profile__name">
 											<p class="sidebar-profile__text">
 												<span class="sidebar-profile__user">Анатолий Г.</span>
-												<img src="./assets/img/catalog/rate.png" alt="" />
+												<svg
+													width="19"
+													height="18"
+													viewBox="0 0 19 18"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M9.5 0L11.6329 6.56434H18.535L12.9511 10.6213L15.084 17.1857L9.5 13.1287L3.91604 17.1857L6.04892 10.6213L0.464963 6.56434H7.36712L9.5 0Z"
+														fill="#F2C94C"
+													/>
+												</svg>
+
 												<span>4.4</span>
 											</p>
 											<p class="sidebar-profile__subtext">На сервисе с 20 марта 2023 г.</p>
 										</div>
-									</div>
+									</a>
 									<a class="sidebar-profile__right" href="#!">
-										<img src="./assets/img/object/vido.png" alt="" />
+										<img src="./assets/img/object/vid.svg" alt="" />
 										<p class="sidebar-profile__subtext">Видео-визитка хозяина объекта</p>
 									</a>
 								</div>
@@ -1158,38 +2273,37 @@
 							<div class="sidebar-object__items">
 								<ul class="sidebar-object__list">
 									<li class="sidebar-object__item">
-										<a class="sidebar-object__link" href="#!">
+										<div class="sidebar-object__link">
 											<h3 class="sidebar-object__title">3.500 ₽</h3>
 											<span class="sidebar-object__span">за сутки</span>
 											<p class="sidebar-object__price">3.500 ₽ / сут.</p>
-										</a>
+										</div>
 									</li>
 									<li class="sidebar-object__item">
-										<a class="sidebar-object__link" href="#!">
+										<div class="sidebar-object__link">
 											<h3 class="sidebar-object__title">56.800 ₽</h3>
 											<span class="sidebar-object__span">за неделю</span>
 											<p class="sidebar-object__price">3.500 ₽ / сут.</p>
-										</a>
+										</div>
 									</li>
 									<li class="sidebar-object__item">
-										<a class="sidebar-object__link" href="#!">
+										<div class="sidebar-object__link">
 											<h3 class="sidebar-object__title">120.000 ₽</h3>
 											<span class="sidebar-object__span">за месяц</span>
 											<p class="sidebar-object__price">3.500 ₽ / сут.</p>
-										</a>
+										</div>
 									</li>
 								</ul>
 							</div>
-							<div class="sidebar-object__calendar" id="calendar-side">
-              </div>
-              <button class="complain">Пожаловаться</button>
+							<div class="sidebar-object__calendar" id="calendar-side"></div>
+							<button class="complain">Пожаловаться</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js"></script>
 		<script src="./js/object-two.js"></script>
 	</body>
 </html>
