@@ -216,6 +216,13 @@
 	max-height: 193px;
 	background-color: #f7f7ff;
 	overflow: hidden;
+	.swiper-btn {
+		transition: opacity .8s ease-in;
+	}
+	.swiper-btn:hover {
+		transition: opacity 0.8s ease-in;
+		opacity: 0.5;
+	}
 	// swiper-wrapper {
 	// 	height: 193px;
 	// }
@@ -1297,6 +1304,7 @@
 	}
 
 	.profile-object {
+		padding: 0;
 		.profile-object__top {
 			display: none;
 		}

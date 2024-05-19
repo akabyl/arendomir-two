@@ -3109,6 +3109,13 @@ hr {
   background-color: #f7f7ff;
   overflow: hidden;
 }
+.profile-object__block .swiper-btn {
+  transition: opacity 0.8s ease-in;
+}
+.profile-object__block .swiper-btn:hover {
+  transition: opacity 0.8s ease-in;
+  opacity: 0.5;
+}
 
 .profile-object .profile-object__item-left {
   max-width: 240px;
@@ -4152,6 +4159,9 @@ hr {
   }
   .devices__logout {
     margin-right: 15px;
+  }
+  .profile-object {
+    padding: 0;
   }
   .profile-object .profile-object__top {
     display: none;
