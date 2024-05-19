@@ -217,7 +217,7 @@
 	background-color: #f7f7ff;
 	overflow: hidden;
 	.swiper-btn {
-		transition: opacity .8s ease-in;
+		transition: opacity 0.8s ease-in;
 	}
 	.swiper-btn:hover {
 		transition: opacity 0.8s ease-in;
@@ -1208,7 +1208,7 @@
 		padding: 15px;
 	}
 	.profile-object__button {
-		padding: 13px;
+		padding: 13px 10px;
 	}
 	.profile-object__bottom {
 		background-color: #e0e0e0;
@@ -1458,6 +1458,14 @@
 	.profile-loyalty__promo {
 		order: -1;
 		margin-bottom: 20px;
+
+		.profile-settings__btn {
+			align-items: center;
+			span {
+				display: inline-block;
+				margin-right: 6px;
+			}
+		}
 	}
 	.profile-loyalty__items {
 		flex-wrap: wrap;
