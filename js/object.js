@@ -25,7 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-const swiper = new Swiper('.swiper', {
+
+
+const swiper = document.querySelector('.swiper');
+if (swiper) {
+
+}
+const swiper2 = new Swiper('.swiper', {
 	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper__next',
@@ -50,6 +56,7 @@ const swiper = new Swiper('.swiper', {
 		},
 	},
 });
+
 
 const calendar = new VanillaCalendar('#calendar', {
 	date: {

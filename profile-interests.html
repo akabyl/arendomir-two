@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мой Профиль</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container container-overflow">
+				<div class="main__profile profile">
+					<div class="profile__sidebar">
+						<ul class="profile__list">
+							<li class="profile__item">
+								<a href="./profile.html" class="profile__link">Мой профиль</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-interests.html" class="profile__link profile__link-active">Интересы</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-objects.html" class="profile__link">Мои объекты</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-settings.html" class="profile__link">Настройки</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-tarrifs.html" class="profile__link">Тарифы и оплата</a>
+							</li>
+							<li class="profile__item"><a href="./profile-trips.html" class="profile__link">Поездки</a></li>
+							<li class="profile__item"><a href="./profile-reviews.html" class="profile__link">Отзывы</a></li>
+							<li class="profile__item">
+								<a href="./profile-loyalty.html" class="profile__link">Программа лояльности</a>
+							</li>
+						</ul>
+					</div>
+					<div class="profile__content">
+						<form class="profile__form profile__section">
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Семейное положение</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-married"
+										name="marry"
+										value="Cостою в браке"
+										checked
+									/>
+									<label class="object-item__label" for="profile-married">Cостою в браке</label>
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-nomarried"
+										name="marry"
+										value="Не состою в браке"
+									/>
+									<label class="object-item__label" for="profile-nomarried">Не состою в браке</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Дети</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-child-yes"
+										name="profile-child"
+										value="Да"
+										checked
+									/>
+									<label class="object-item__label" for="profile-child-yes">Да</label>
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-child-no"
+										name="profile-child"
+										value="Нет"
+									/>
+									<label class="object-item__label" for="profile-child-no">Нет</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Инвалид</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="disabled-person-yes"
+										name="disabled-person"
+										value="Да"
+										checked
+									/>
+									<label class="object-item__label" for="disabled-person-yes">Да</label>
+									<input
+										class="object-item__input"
+										type="radio"
+										id="disabled-person-no"
+										name="disabled-person"
+										value="Нет"
+									/>
+									<label class="object-item__label" for="disabled-person-no">Нет</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Домашние животные</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="home-animals-yes"
+										name="home-animals"
+										value="Да"
+										checked
+									/>
+									<label class="object-item__label" for="home-animals-yes">Да</label>
+									<input
+										class="object-item__input"
+										type="radio"
+										id="home-animals-no"
+										name="home-animals"
+										value="Нет"
+									/>
+									<label class="object-item__label" for="home-animals-no">Нет</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Курение</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-smoke-yes"
+										name="profile-smoke"
+										value="Да"
+										checked
+									/>
+									<label class="object-item__label" for="profile-smoke-yes">Да</label>
+									<input
+										class="object-item__input"
+										type="radio"
+										id="profile-smoke-no"
+										name="profile-smoke"
+										value="Нет"
+									/>
+									<label class="object-item__label" for="profile-smoke-no">Нет</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Возможность выступить в качестве гида</h2>
+								<div class="object-item-type">
+									<input
+										class="object-item__input"
+										type="radio"
+										id="guide-yes"
+										name="guide"
+										value="Да"
+										checked
+									/>
+									<label class="object-item__label" for="guide-yes">Да</label>
+									<input class="object-item__input" type="radio" id="guide-no" name="guide" value="Нет" />
+									<label class="object-item__label" for="guide-no">Нет</label>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Увлечения</h2>
+								<div class="object-item-type profile-item-type">
+									<p class="profile__type-text">Начните вводить текст и выберите из списка</p>
+									<div class="object-select">
+										<input type="search" class="object-select__header" />
+										<ul class="object-select__list">
+											<li class="object-select__item">Йога</li>
+											<li class="object-select__item">Охота</li>
+											<li class="object-select__item">Рыбалка</li>
+										</ul>
+									</div>
+									<div class="selected">
+										<div class="selected__text">
+											Йога
+											<button type="button">
+												<svg
+													width="9"
+													height="8"
+													viewBox="0 0 9 8"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8 7.5L1 0.5M8 0.5L1 7.5"
+														stroke="#333333"
+														stroke-width="0.8"
+														stroke-linecap="round"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="selected__text">
+											Охота
+											<button type="button">
+												<svg
+													width="9"
+													height="8"
+													viewBox="0 0 9 8"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8 7.5L1 0.5M8 0.5L1 7.5"
+														stroke="#333333"
+														stroke-width="0.8"
+														stroke-linecap="round"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="selected__text">
+											Рыбалка
+											<button type="button">
+												<svg
+													width="9"
+													height="8"
+													viewBox="0 0 9 8"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8 7.5L1 0.5M8 0.5L1 7.5"
+														stroke="#333333"
+														stroke-width="0.8"
+														stroke-linecap="round"
+													/>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-item object-item_center">
+								<h2 class="object-item__title">Видео-визитка</h2>
+								<div class="object-item-type">
+									<input class="object-item__number" type="text" placeholder="Ссылка на видео" name="Видео-визитка" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./js/profile.js"></script>
+	</body>
+</html>

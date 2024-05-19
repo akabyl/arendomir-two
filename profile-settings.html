@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мой Профиль</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container container-overflow">
+				<div class="main__profile profile">
+					<div class="profile__sidebar">
+						<ul class="profile__list">
+							<li class="profile__item">
+								<a href="./profile.html" class="profile__link">Мой профиль</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-interests.html" class="profile__link">Интересы</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-objects.html" class="profile__link">Мои объекты</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-settings.html" class="profile__link profile__link-active">Настройки</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-tarrifs.html" class="profile__link">Тарифы и оплата</a>
+							</li>
+							<li class="profile__item"><a href="./profile-trips.html" class="profile__link">Поездки</a></li>
+							<li class="profile__item"><a href="./profile-reviews.html" class="profile__link">Отзывы</a></li>
+							<li class="profile__item">
+								<a href="./profile-loyalty.html" class="profile__link">Программа лояльности</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="profile__inner">
+						<div class="profile__content">
+							<section class="profile__section section-settings profile-settings">
+								<h2 class="profile__title settings-title">Данные аккаунта</h2>
+								<form action="" class="profile-settings__form">
+									<div class="input-container">
+										<input
+											class="profile-settings__input"
+											type="text"
+											id="fullName"
+											name="fullName"
+											placeholder="Смирнов Сергей Петрович"
+										/>
+										<button class="profile-settings__btn" type="button" onclick="editField('fullName')">
+											<span>Изменить Ф.И.О</span>
+											<svg
+												width="19"
+												height="19"
+												viewBox="0 0 19 19"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M11.8763 4.75041L14.2513 7.12541M10.293 15.8337H16.6263M3.95964 12.6671L3.16797 15.8337L6.33464 15.0421L15.5069 5.86983C15.8037 5.57291 15.9705 5.17026 15.9705 4.75041C15.9705 4.33057 15.8037 3.92791 15.5069 3.631L15.3707 3.49483C15.0738 3.198 14.6711 3.03125 14.2513 3.03125C13.8315 3.03125 13.4288 3.198 13.1319 3.49483L3.95964 12.6671Z"
+													stroke="#333333"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+										<span class="place">Ф.И.О</span>
+									</div>
+									<div class="input-container">
+										<input
+											class="profile-settings__input"
+											type="tel"
+											id="phoneNumber"
+											name="phoneNumber"
+											placeholder="+7 (999) 192-90-87"
+										/>
+										<button
+											class="profile-settings__btn"
+											type="button"
+											class="edit-button"
+											onclick="editField('phoneNumber')"
+										>
+											<span>Изменить номер телефона</span>
+											<svg
+												width="19"
+												height="19"
+												viewBox="0 0 19 19"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M11.8763 4.75041L14.2513 7.12541M10.293 15.8337H16.6263M3.95964 12.6671L3.16797 15.8337L6.33464 15.0421L15.5069 5.86983C15.8037 5.57291 15.9705 5.17026 15.9705 4.75041C15.9705 4.33057 15.8037 3.92791 15.5069 3.631L15.3707 3.49483C15.0738 3.198 14.6711 3.03125 14.2513 3.03125C13.8315 3.03125 13.4288 3.198 13.1319 3.49483L3.95964 12.6671Z"
+													stroke="#333333"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+										<span class="place">Номер телефона</span>
+									</div>
+									<div class="input-container">
+										<input
+											class="profile-settings__input"
+											type="email"
+											id="email"
+											name="email"
+											placeholder="admin@mail.ru"
+										/>
+										<button
+											class="profile-settings__btn"
+											type="button"
+											class="edit-button"
+											onclick="editField('email')"
+										>
+											<span>Изменить E-mail</span>
+											<svg
+												width="19"
+												height="19"
+												viewBox="0 0 19 19"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M11.8763 4.75041L14.2513 7.12541M10.293 15.8337H16.6263M3.95964 12.6671L3.16797 15.8337L6.33464 15.0421L15.5069 5.86983C15.8037 5.57291 15.9705 5.17026 15.9705 4.75041C15.9705 4.33057 15.8037 3.92791 15.5069 3.631L15.3707 3.49483C15.0738 3.198 14.6711 3.03125 14.2513 3.03125C13.8315 3.03125 13.4288 3.198 13.1319 3.49483L3.95964 12.6671Z"
+													stroke="#333333"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+										<span class="place">E-mail</span>
+									</div>
+									<div class="input-container">
+										<div class="input-container__content">
+											<div class="input-container__icon">
+												<svg
+													width="17"
+													height="19"
+													viewBox="0 0 17 19"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M16.3174 14.9281C15.7997 14.452 15.3464 13.9063 14.9698 13.3056C14.5586 12.4764 14.3122 11.5708 14.245 10.642V7.90647C14.2485 6.44766 13.7354 5.03773 12.8021 3.94157C11.8688 2.84541 10.5795 2.13848 9.17651 1.95361V1.23926C9.17651 1.0432 9.10099 0.855164 8.96657 0.716525C8.83215 0.577886 8.64983 0.5 8.45973 0.5C8.26963 0.5 8.08731 0.577886 7.95289 0.716525C7.81847 0.855164 7.74295 1.0432 7.74295 1.23926V1.96468C6.35249 2.16288 5.07878 2.87409 4.15773 3.96656C3.23669 5.05904 2.73073 6.45876 2.73356 7.90647V10.642C2.66631 11.5708 2.41988 12.4764 2.00872 13.3056C1.63873 13.9049 1.19272 14.4506 0.68255 14.9281C0.625279 14.98 0.579378 15.0438 0.547902 15.1155C0.516426 15.1871 0.500097 15.2648 0.5 15.3434V16.0965C0.5 16.2434 0.556567 16.3842 0.657258 16.4881C0.757949 16.5919 0.894515 16.6503 1.03691 16.6503H15.9631C16.1055 16.6503 16.2421 16.5919 16.3427 16.4881C16.4434 16.3842 16.5 16.2434 16.5 16.0965V15.3434C16.4999 15.2648 16.4836 15.1871 16.4521 15.1155C16.4206 15.0438 16.3747 14.98 16.3174 14.9281ZM1.61678 15.5427C2.11633 15.045 2.55616 14.4873 2.92685 13.8815C3.44476 12.88 3.74694 11.775 3.81275 10.642V7.90647C3.79146 7.25749 3.89701 6.61072 4.12311 6.00469C4.34922 5.39866 4.69125 4.84575 5.12886 4.37889C5.56646 3.91202 6.09068 3.54076 6.6703 3.2872C7.24992 3.03364 7.87308 2.90297 8.50268 2.90297C9.13229 2.90297 9.75545 3.03364 10.3351 3.2872C10.9147 3.54076 11.4389 3.91202 11.8765 4.37889C12.3141 4.84575 12.6562 5.39866 12.8823 6.00469C13.1084 6.61072 13.2139 7.25749 13.1926 7.90647V10.642C13.2584 11.775 13.5606 12.88 14.0785 13.8815C14.4492 14.4873 14.889 15.045 15.3886 15.5427H1.61678Z"
+														fill="#2CACAF"
+														stroke="#2CACAF"
+														stroke-width="0.2"
+													/>
+													<path
+														d="M8.52682 18.4999C8.86504 18.4918 9.18961 18.3607 9.44311 18.1296C9.69662 17.8986 9.86273 17.5825 9.91205 17.2373H7.08789C7.13861 17.5919 7.31249 17.9154 7.57718 18.1476C7.84187 18.3799 8.17934 18.505 8.52682 18.4999Z"
+														fill="#2CACAF"
+														stroke="#2CACAF"
+														stroke-width="0.2"
+													/>
+												</svg>
+											</div>
+											<p class="input-container__text">E-mail рассылка <span>Включена</span></p>
+										</div>
+										<button
+											class="profile-settings__btn"
+											type="button"
+											class="edit-button"
+											onclick="editField('email')"
+										>
+											<span>Отписаться</span>
+											<svg
+												width="14"
+												height="15"
+												viewBox="0 0 14 15"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M7.73684 0V7.36842H6.26316V0H7.73684ZM10.5221 1.27326L11.1182 1.70726C12.3133 2.57671 13.2025 3.80208 13.6585 5.20784C14.1145 6.61359 14.1138 8.1276 13.6567 9.53298C13.1995 10.9384 12.3093 12.163 11.1136 13.0315C9.91781 13.8999 8.47786 14.3677 7 14.3677C5.52214 14.3677 4.08219 13.8999 2.88643 13.0315C1.69067 12.163 0.80046 10.9384 0.343314 9.53298C-0.113831 8.1276 -0.114452 6.61359 0.341541 5.20784C0.797534 3.80208 1.68674 2.57671 2.88179 1.70726L3.47716 1.27253L4.34516 2.464L3.74979 2.89874C2.80609 3.58499 2.10383 4.55235 1.74361 5.66219C1.3834 6.77204 1.38372 7.96743 1.74453 9.07708C2.10534 10.1867 2.80813 11.1537 3.75219 11.8395C4.69626 12.5252 5.83316 12.8945 7 12.8945C8.16684 12.8945 9.30374 12.5252 10.2478 11.8395C11.1919 11.1537 11.8947 10.1867 12.2555 9.07708C12.6163 7.96743 12.6166 6.77204 12.2564 5.66219C11.8962 4.55235 11.1939 3.58499 10.2502 2.89874L9.65484 2.464L10.5221 1.27326Z"
+													fill="#333333"
+												/>
+											</svg>
+										</button>
+									</div>
+
+									<div class="input-container">
+										<input
+											class="profile-settings__input"
+											type="password"
+											id="password"
+											name="password"
+											placeholder="Последний раз изменен 12.12.2023 г."
+										/>
+										<button
+											class="profile-settings__btn"
+											type="button"
+											class="edit-button"
+											onclick="editField('password')"
+										>
+											<span>Изменить пароль</span>
+											<svg
+												width="19"
+												height="19"
+												viewBox="0 0 19 19"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M11.8763 4.75041L14.2513 7.12541M10.293 15.8337H16.6263M3.95964 12.6671L3.16797 15.8337L6.33464 15.0421L15.5069 5.86983C15.8037 5.57291 15.9705 5.17026 15.9705 4.75041C15.9705 4.33057 15.8037 3.92791 15.5069 3.631L15.3707 3.49483C15.0738 3.198 14.6711 3.03125 14.2513 3.03125C13.8315 3.03125 13.4288 3.198 13.1319 3.49483L3.95964 12.6671Z"
+													stroke="#333333"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+										<span class="place">Пароль</span>
+									</div>
+
+									<div class="input-container">
+										<div class="input-container__content">
+											<div class="input-container__icon">
+												<svg
+													width="17"
+													height="19"
+													viewBox="0 0 17 19"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.16147 7.18411L10.4117 5.655C10.6305 5.57627 10.87 5.57627 11.0888 5.655L15.339 7.18411C15.7359 7.32689 16.0005 7.70331 16.0005 8.12507V13.7097C16.0005 14.0314 15.8457 14.3335 15.5846 14.5214L11.3343 17.5796C10.9854 17.8307 10.5151 17.8307 10.1662 17.5796L5.91594 14.5214C5.65479 14.3335 5.5 14.0314 5.5 13.7097V8.12507C5.5 7.70331 5.76462 7.32689 6.16147 7.18411Z"
+														stroke="#2CACAF"
+														stroke-width="1.2"
+													/>
+													<path
+														d="M8.875 11.9553L10.3751 13.0886L13.0002 10.0664"
+														stroke="#2CACAF"
+														stroke-width="1.2"
+													/>
+													<path
+														d="M5.1252 17.6222C3.75013 17.7481 1 17.32 1 14.6C1 11.88 1 6.16296 1 3.64444C1.12501 2.76296 1.82504 1 3.62513 1C5.42522 1 7.62532 1 8.50037 1C9.1254 1.12593 10.3755 1.68 10.3755 2.88889"
+														stroke="#2CACAF"
+														stroke-width="1.2"
+													/>
+												</svg>
+											</div>
+											<p class="input-container__text">Двухфакторная аутентификация <span>Выключена</span></p>
+										</div>
+										<button
+											class="profile-settings__btn profile-settings__btn-primary"
+											type="button"
+											class="edit-button"
+										>
+											<span>Включить</span>
+											<svg
+												width="14"
+												height="15"
+												viewBox="0 0 14 15"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M7.73684 0V7.36842H6.26316V0H7.73684ZM10.5221 1.27326L11.1182 1.70726C12.3133 2.57671 13.2025 3.80208 13.6585 5.20784C14.1145 6.61359 14.1138 8.1276 13.6567 9.53298C13.1995 10.9384 12.3093 12.163 11.1136 13.0315C9.91781 13.8999 8.47786 14.3677 7 14.3677C5.52214 14.3677 4.08219 13.8999 2.88643 13.0315C1.69067 12.163 0.80046 10.9384 0.343314 9.53298C-0.113831 8.1276 -0.114452 6.61359 0.341541 5.20784C0.797534 3.80208 1.68674 2.57671 2.88179 1.70726L3.47716 1.27253L4.34516 2.464L3.74979 2.89874C2.80609 3.58499 2.10383 4.55235 1.74361 5.66219C1.3834 6.77204 1.38372 7.96743 1.74453 9.07708C2.10534 10.1867 2.80813 11.1537 3.75219 11.8395C4.69626 12.5252 5.83316 12.8945 7 12.8945C8.16684 12.8945 9.30374 12.5252 10.2478 11.8395C11.1919 11.1537 11.8947 10.1867 12.2555 9.07708C12.6163 7.96743 12.6166 6.77204 12.2564 5.66219C11.8962 4.55235 11.1939 3.58499 10.2502 2.89874L9.65484 2.464L10.5221 1.27326Z"
+													fill="#333333"
+												/>
+											</svg>
+										</button>
+									</div>
+								</form>
+							</section>
+
+							<section class="profile__section section-settings">
+								<h2 class="profile__title settings-title">Мои устройства</h2>
+								<div class="input-container input-container-devices">
+									<div class="input-container__content input-container__content-devices">
+										<div class="devices">
+											<div class="devices__inner">
+												<div class="input-container__icon">
+													<svg
+														width="17"
+														height="19"
+														viewBox="0 0 17 19"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M6.16147 7.18411L10.4117 5.655C10.6305 5.57627 10.87 5.57627 11.0888 5.655L15.339 7.18411C15.7359 7.32689 16.0005 7.70331 16.0005 8.12507V13.7097C16.0005 14.0314 15.8457 14.3335 15.5846 14.5214L11.3343 17.5796C10.9854 17.8307 10.5151 17.8307 10.1662 17.5796L5.91594 14.5214C5.65479 14.3335 5.5 14.0314 5.5 13.7097V8.12507C5.5 7.70331 5.76462 7.32689 6.16147 7.18411Z"
+															stroke="#2CACAF"
+															stroke-width="1.2"
+														/>
+														<path
+															d="M8.875 11.9553L10.3751 13.0886L13.0002 10.0664"
+															stroke="#2CACAF"
+															stroke-width="1.2"
+														/>
+														<path
+															d="M5.1252 17.6222C3.75013 17.7481 1 17.32 1 14.6C1 11.88 1 6.16296 1 3.64444C1.12501 2.76296 1.82504 1 3.62513 1C5.42522 1 7.62532 1 8.50037 1C9.1254 1.12593 10.3755 1.68 10.3755 2.88889"
+															stroke="#2CACAF"
+															stroke-width="1.2"
+														/>
+													</svg>
+												</div>
+												<p class="input-container__text">
+													Авторизация на других устройствах <span>2 устройства</span>
+												</p>
+												<svg
+													class="arrow"
+													width="16"
+													height="7"
+													viewBox="0 0 16 7"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path d="M1 1L8 6L15 1" stroke="#828282" stroke-width="1.2" />
+												</svg>
+											</div>
+											<ul class="devices__list">
+												<li class="devices__item">
+													<div class="devices__icon">
+														<svg
+															width="17"
+															height="15"
+															viewBox="0 0 17 15"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M15.1667 0H1.83333C1.3471 0 0.880787 0.184935 0.536971 0.514121C0.193154 0.843307 0 1.28978 0 1.75532V10.6915C0 11.157 0.193154 11.6035 0.536971 11.9327C0.880787 12.2619 1.3471 12.4468 1.83333 12.4468H15.1667C15.6529 12.4468 16.1192 12.2619 16.463 11.9327C16.8068 11.6035 17 11.157 17 10.6915V1.75532C17 1.28978 16.8068 0.843307 16.463 0.514121C16.1192 0.184935 15.6529 0 15.1667 0ZM16 10.6915C16 10.9031 15.9122 11.106 15.7559 11.2557C15.5996 11.4053 15.3877 11.4894 15.1667 11.4894H1.83333C1.61232 11.4894 1.40036 11.4053 1.24408 11.2557C1.0878 11.106 1 10.9031 1 10.6915V1.75532C1 1.54371 1.0878 1.34077 1.24408 1.19114C1.40036 1.04151 1.61232 0.957447 1.83333 0.957447H15.1667C15.3877 0.957447 15.5996 1.04151 15.7559 1.19114C15.9122 1.34077 16 1.54371 16 1.75532V10.6915ZM11.6667 14.5213C11.6667 14.6482 11.614 14.77 11.5202 14.8598C11.4265 14.9496 11.2993 15 11.1667 15H5.83333C5.70073 15 5.57355 14.9496 5.47978 14.8598C5.38601 14.77 5.33333 14.6482 5.33333 14.5213C5.33333 14.3943 5.38601 14.2725 5.47978 14.1828C5.57355 14.093 5.70073 14.0426 5.83333 14.0426H11.1667C11.2993 14.0426 11.4265 14.093 11.5202 14.1828C11.614 14.2725 11.6667 14.3943 11.6667 14.5213Z"
+																fill="#2CACAF"
+															/>
+														</svg>
+													</div>
+													<div class="devices__descr">
+														<p class="devices__text">Windows <span>Браузер Chrome</span></p>
+														<p class="devices__subtext">Москва, 7 января в 14:16</p>
+													</div>
+													<div class="devices__logout">
+														<svg
+															width="11"
+															height="11"
+															viewBox="0 0 11 11"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M5.275 1H2.35C1.9 1.15 1 1.675 1 2.575C1 3.475 1 6.85 1 8.425C1.075 8.95 1.45 10 2.35 10C3.25 10 4.675 10 5.275 10"
+																stroke="#FF5C5C"
+																stroke-width="0.72"
+															/>
+															<path
+																d="M4.15039 5.49961H10.0004M10.0004 5.49961L7.97539 3.47461M10.0004 5.49961L7.97539 7.52461"
+																stroke="#FF5C5C"
+																stroke-width="0.72"
+															/>
+														</svg>
+													</div>
+												</li>
+												<li class="devices__item">
+													<div class="devices__icon">
+														<svg
+															width="12"
+															height="17"
+															viewBox="0 0 12 17"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<g clip-path="url(#clip0_2472_44703)">
+																<path
+																	d="M4.24922 14.393H7.64922C7.76194 14.393 7.87004 14.3482 7.94974 14.2685C8.02944 14.1888 8.07422 14.0807 8.07422 13.968C8.07422 13.8553 8.02944 13.7472 7.94974 13.6674C7.87004 13.5877 7.76194 13.543 7.64922 13.543H4.24922C4.1365 13.543 4.0284 13.5877 3.9487 13.6674C3.869 13.7472 3.82422 13.8553 3.82422 13.968C3.82422 14.0807 3.869 14.1888 3.9487 14.2685C4.0284 14.3482 4.1365 14.393 4.24922 14.393Z"
+																	fill="#2CACAF"
+																/>
+																<path
+																	d="M9.96898 16.9466H1.93307C1.39979 16.9148 0.900649 16.6737 0.544237 16.2757C0.187825 15.8778 0.00298237 15.3552 0.0299248 14.8216V2.17871C0.00298237 1.64516 0.187825 1.12256 0.544237 0.724598C0.900649 0.326639 1.39979 0.0855241 1.93307 0.0537109H9.96898C10.5023 0.0855241 11.0014 0.326639 11.3578 0.724598C11.7142 1.12256 11.8991 1.64516 11.8721 2.17871V14.8216C11.8991 15.3552 11.7142 15.8778 11.3578 16.2757C11.0014 16.6737 10.5023 16.9148 9.96898 16.9466ZM1.93307 0.903711C1.62562 0.936186 1.34314 1.08788 1.14625 1.32625C0.949363 1.56461 0.853748 1.87066 0.879925 2.17871V14.8216C0.853748 15.1297 0.949363 15.4357 1.14625 15.6741C1.34314 15.9124 1.62562 16.0641 1.93307 16.0966H9.96898C10.2764 16.0641 10.5589 15.9124 10.7558 15.6741C10.9527 15.4357 11.0483 15.1297 11.0221 14.8216V2.17871C11.0483 1.87066 10.9527 1.56461 10.7558 1.32625C10.5589 1.08788 10.2764 0.936186 9.96898 0.903711H1.93307Z"
+																	fill="#2CACAF"
+																/>
+															</g>
+															<defs>
+																<clipPath id="clip0_2472_44703">
+																	<rect width="11.9" height="17" fill="white" />
+																</clipPath>
+															</defs>
+														</svg>
+													</div>
+													<div class="devices__descr">
+														<p class="devices__text">iOS <span>Браузер Safari</span></p>
+														<p class="devices__subtext">Москва, 10 января в 11:20</p>
+													</div>
+													<div class="devices__logout">
+														<svg
+															width="11"
+															height="11"
+															viewBox="0 0 11 11"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<path
+																d="M5.275 1H2.35C1.9 1.15 1 1.675 1 2.575C1 3.475 1 6.85 1 8.425C1.075 8.95 1.45 10 2.35 10C3.25 10 4.675 10 5.275 10"
+																stroke="#FF5C5C"
+																stroke-width="0.72"
+															/>
+															<path
+																d="M4.15039 5.49961H10.0004M10.0004 5.49961L7.97539 3.47461M10.0004 5.49961L7.97539 7.52461"
+																stroke="#FF5C5C"
+																stroke-width="0.72"
+															/>
+														</svg>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<button class="close-all" type="button" class="edit-button">
+										<div class="input-container__icon">
+											<svg
+												width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M7.65 1H3.1C2.4 1.23333 1 2.05 1 3.45C1 4.85 1 10.1 1 12.55C1.11667 13.3667 1.7 15 3.1 15C4.5 15 6.71667 15 7.65 15"
+													stroke="#FF5C5C"
+													stroke-width="1.12"
+												/>
+												<path
+													d="M5.90039 7.99961H15.0004M15.0004 7.99961L11.8504 4.84961M15.0004 7.99961L11.8504 11.1496"
+													stroke="#FF5C5C"
+													stroke-width="1.12"
+												/>
+											</svg>
+										</div>
+										<p class="input-container__text">
+											Завершить другие сеансы <span>Выйти на всех устройствах, кроме этого</span>
+										</p>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div class="profile__section profile__photo">
+							<h2 class="profile__title settings-title settings-title_wrap">Фотография профиля</h2>
+							<div class="profile__photo-ava"><img src="./assets/img/profile/big-photo.png" alt="" /></div>
+							<div class="profile__photo-btns">
+								<button>
+									<img src="./assets/img/profile/download.svg" alt="" />
+									<span>Обновить фото</span>
+								</button>
+								<button>
+									<img src="./assets/img/profile/photo.svg" alt="" />
+									<span>Сделать снимок</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- <script src="./js/profile.js"></script> -->
+	</body>
+</html>

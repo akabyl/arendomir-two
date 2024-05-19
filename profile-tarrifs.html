@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мой Профиль</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container container-overflow">
+				<div class="main__profile profile">
+					<div class="profile__sidebar">
+						<ul class="profile__list">
+							<li class="profile__item">
+								<a href="./profile.html" class="profile__link">Мой профиль</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-interests.html" class="profile__link">Интересы</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-objects.html" class="profile__link">Мои объекты</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-settings.html" class="profile__link">Настройки</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-tarrifs.html" class="profile__link profile__link-active"
+									>Тарифы и оплата</a
+								>
+							</li>
+							<li class="profile__item"><a href="./profile-trips.html" class="profile__link">Поездки</a></li>
+							<li class="profile__item"><a href="./profile-reviews.html" class="profile__link">Отзывы</a></li>
+							<li class="profile__item">
+								<a href="./profile-loyalty.html" class="profile__link">Программа лояльности</a>
+							</li>
+						</ul>
+					</div>
+					<div class="profile__inner">
+						<div class="profile__content tarrifs-overflow">
+							<div class="profile__section profile-tarrifs">
+								<div class="profile-object__top">
+									<ul class="profile-object__list">
+										<li class="profile-object__item">
+											<a href="#!" class="profile-object__link active">Действующие</a>
+										</li>
+										<li class="profile-object__item">
+											<a href="./profile-tarrifs-archive.html" class="profile-object__link">Архив</a>
+										</li>
+									</ul>
+								</div>
+								<div class="profile-tarrifs__bottom">
+									<ul class="profile-tarrifs__list">
+										<li class="profile-tarrifs__item profile-tarrifs__item-head">
+											<div class="profile-tarrifs__service">Тип услуги</div>
+											<div class="profile-tarrifs__date">Дата покупки</div>
+											<div class="profile-tarrifs__term">Действует до</div>
+											<div class="profile-tarrifs__status">Статус</div>
+										</li>
+
+										<li class="profile-tarrifs__item">
+											<div class="profile-tarrifs__service profile-tarrifs__service-accent">
+												Пакет на 3 поездки
+											</div>
+											<div class="profile-tarrifs__date">Приобретен 30.12.2024 г.</div>
+											<div class="profile-tarrifs__term">Истекает 30.12.2025 г.</div>
+											<div class="profile-tarrifs__status">Осталось 2 поездки</div>
+										</li>
+
+										<li class="profile-tarrifs__item">
+											<div class="profile-tarrifs__service profile-tarrifs__service-accent">
+												Юридическое сопровождение
+											</div>
+											<div class="profile-tarrifs__date">Приобретен 30.12.2024 г.</div>
+											<div class="profile-tarrifs__term">Истекает 30.12.2025 г.</div>
+											<div class="profile-tarrifs__status accent">Доступно</div>
+										</li>
+
+										<li class="profile-tarrifs__item">
+											<div class="profile-tarrifs__service profile-tarrifs__service-accent">
+												Скидка на 50%
+											</div>
+											<div class="profile-tarrifs__date">Начислена 12.10.2024 г.</div>
+											<div class="profile-tarrifs__term">Истекает 12.10.2025 г.</div>
+											<div class="profile-tarrifs__status accent">Доступна</div>
+										</li>
+									</ul>
+									<div class="profile-tarrifs__links">
+										<a href="#!" class="profile-tarrifs__link accent">Купить пакет поездок</a>
+										<a href="#!" class="profile-tarrifs__link">Купить юридическое сопровождение</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- <script src="./js/profile.js"></script> -->
+	</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мой Профиль</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container container-overflow">
+				<div class="main__profile profile">
+					<div class="profile__sidebar">
+						<ul class="profile__list">
+							<li class="profile__item">
+								<a href="./profile.html" class="profile__link">Мой профиль</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-interests.html" class="profile__link">Интересы</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-objects.html" class="profile__link profile__link-active">Мои объекты</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-settings.html" class="profile__link">Настройки</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-tarrifs.html" class="profile__link">Тарифы и оплата</a>
+							</li>
+							<li class="profile__item"><a href="./profile-trips.html" class="profile__link">Поездки</a></li>
+							<li class="profile__item"><a href="./profile-reviews.html" class="profile__link">Отзывы</a></li>
+							<li class="profile__item">
+								<a href="./profile-loyalty.html" class="profile__link">Программа лояльности</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="profile__content">
+						<div class="profile__section profile-object">
+							<div class="profile-object__top">
+								<ul class="profile-object__list">
+									<li class="profile-object__item">
+										<a href="#!" class="profile-object__link">Для аренды</a>
+									</li>
+									<li class="profile-object__item">
+										<a href="#!" class="profile-object__link active">Для обмена</a>
+									</li>
+									<li class="profile-object__item">
+										<a href="#!" class="profile-object__link">Для визитов</a>
+									</li>
+									<li class="profile-object__item">
+										<a href="#!" class="profile-object__link">Черновики</a>
+									</li>
+								</ul>
+							</div>
+							<div class="profile-object__items">
+								<div class="profile-object__block">
+									<div class="profile-object__item-left">
+										<div class="catalog-item__swiper">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/catalog/s1.jpg" />
+															<source media="(max-width: 1367px)" srcset="./assets/img/catalog/4.jpg" />
+															<img
+																src="./assets/img/object/obj.png"
+																alt="3-к комнатная квартира с 5 спальными местами"
+															/>
+														</picture>
+													</div>
+													<div class="swiper-slide">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/catalog/s1.jpg" />
+															<source media="(max-width: 1367px)" srcset="./assets/img/catalog/4.jpg" />
+															<img
+																src="./assets/img/object/obj.png"
+																alt="3-к комнатная квартира с 5 спальными местами"
+															/>
+														</picture>
+													</div>
+													<div class="swiper-slide">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/catalog/s1.jpg" />
+															<source media="(max-width: 1367px)" srcset="./assets/img/catalog/4.jpg" />
+															<img
+																src="./assets/img/object/obj.png"
+																alt="3-к комнатная квартира с 5 спальными местами"
+															/>
+														</picture>
+													</div>
+													<div class="swiper-slide">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/catalog/s1.jpg" />
+															<source media="(max-width: 1367px)" srcset="./assets/img/catalog/4.jpg" />
+															<img
+																src="./assets/img/object/obj.png"
+																alt="3-к комнатная квартира с 5 спальными местами"
+															/>
+														</picture>
+													</div>
+												</div>
+
+												<div class="swiper-pagination"></div>
+												<div
+													class="swiper-button-prev swiper-btn"
+													style="background-image: url('./assets/img/icons/slider/left.svg')"
+												></div>
+												<div
+													class="swiper-button-next swiper-btn"
+													style="background-image: url('./assets/img/icons/slider/right.svg')"
+												></div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-object__content">
+										<div class="profile-object__item-center">
+											<h2 class="profile-object__item-title">3-к комнатная квартира с 5 спальными местами</h2>
+											<div class="profile-object__rate">
+												<svg
+													width="14"
+													height="13"
+													viewBox="0 0 14 13"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z"
+														fill="#F2C94C"
+													/>
+												</svg>
+												<span class="profile-object__rate-count">4,4</span>
+												<span class="profile-object__rate-text">121 отзыв об объекте</span>
+											</div>
+											<div class="profile-object__download">
+												<p class="profile-object__download-text">Выписка из ЕГРН (загружена 18.12.2023)</p>
+												<button class="profile-object__download-btn" type="button">
+													<svg
+														width="12"
+														height="12"
+														viewBox="0 0 12 12"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M0.375 7.4248C0.474456 7.4248 0.569839 7.46431 0.640165 7.53464C0.710491 7.60497 0.75 7.70035 0.75 7.7998V9.6748C0.75 9.87372 0.829018 10.0645 0.96967 10.2051C1.11032 10.3458 1.30109 10.4248 1.5 10.4248H10.5C10.6989 10.4248 10.8897 10.3458 11.0303 10.2051C11.171 10.0645 11.25 9.87372 11.25 9.6748V7.7998C11.25 7.70035 11.2895 7.60497 11.3598 7.53464C11.4302 7.46431 11.5255 7.4248 11.625 7.4248C11.7245 7.4248 11.8198 7.46431 11.8902 7.53464C11.9605 7.60497 12 7.70035 12 7.7998V9.6748C12 10.0726 11.842 10.4542 11.5607 10.7355C11.2794 11.0168 10.8978 11.1748 10.5 11.1748H1.5C1.10218 11.1748 0.720644 11.0168 0.43934 10.7355C0.158035 10.4542 0 10.0726 0 9.6748V7.7998C0 7.70035 0.0395088 7.60497 0.109835 7.53464C0.180161 7.46431 0.275544 7.4248 0.375 7.4248Z"
+															fill="#4F4F4F"
+														/>
+														<path
+															d="M5.73497 8.8905C5.76981 8.92542 5.81119 8.95313 5.85675 8.97203C5.90231 8.99094 5.95115 9.00067 6.00047 9.00067C6.0498 9.00067 6.09864 8.99094 6.1442 8.97203C6.18976 8.95313 6.23114 8.92542 6.26597 8.8905L8.51597 6.6405C8.58639 6.57009 8.62595 6.47458 8.62595 6.375C8.62595 6.27542 8.58639 6.17991 8.51597 6.1095C8.44556 6.03908 8.35006 5.99953 8.25047 5.99953C8.15089 5.99953 8.05539 6.03908 7.98497 6.1095L6.37547 7.71975V1.125C6.37547 1.02554 6.33597 0.930161 6.26564 0.859835C6.19531 0.789509 6.09993 0.75 6.00047 0.75C5.90102 0.75 5.80563 0.789509 5.73531 0.859835C5.66498 0.930161 5.62547 1.02554 5.62547 1.125V7.71975L4.01597 6.1095C3.94556 6.03908 3.85006 5.99953 3.75047 5.99953C3.65089 5.99953 3.55539 6.03908 3.48497 6.1095C3.41456 6.17991 3.375 6.27542 3.375 6.375C3.375 6.47458 3.41456 6.57009 3.48497 6.6405L5.73497 8.8905Z"
+															fill="#4F4F4F"
+														/>
+													</svg>
+													<span>Загрузить новую выписку</span>
+												</button>
+											</div>
+										</div>
+										<div class="profile-object__item-right">
+											<button class="profile-object__button remove">Снять с публикации</button>
+											<button class="profile-object__button edit">Редактировать</button>
+											<button class="profile-object__button delete">Удалить</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<button class="profile-object__bottom">
+								Добавить новый объект
+								<span>+</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/profile.js"></script>
+	</body>
+</html>

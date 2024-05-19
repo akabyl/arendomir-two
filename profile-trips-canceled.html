@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Мой Профиль</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="main__profile profile">
+					<div class="profile__sidebar">
+						<ul class="profile__list">
+							<li class="profile__item">
+								<a href="./profile.html" class="profile__link">Мой профиль</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-interests.html" class="profile__link">Интересы</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-objects.html" class="profile__link">Мои объекты</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-settings.html" class="profile__link">Настройки</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-tarrifs.html" class="profile__link">Тарифы и оплата</a>
+							</li>
+							<li class="profile__item">
+								<a href="./profile-trips.html" class="profile__link profile__link-active">Поездки</a>
+							</li>
+							<li class="profile__item"><a href="./profile-reviews.html" class="profile__link">Отзывы</a></li>
+							<li class="profile__item">
+								<a href="./profile-loyalty.html" class="profile__link">Программа лояльности</a>
+							</li>
+						</ul>
+					</div>
+					<div class="profile__inner">
+						<div class="profile__content profile__content-trips">
+							<div class="profile__section profile-trips canceled">
+								<div class="flex top-auto">
+									<div class="profile-object__top">
+										<ul class="profile-object__list">
+											<li class="profile-object__item">
+												<a href="#!" class="profile-object__link active">Я еду</a>
+											</li>
+											<li class="profile-object__item">
+												<a href="#!" class="profile-object__link">Ко мне едут</a>
+											</li>
+										</ul>
+									</div>
+									<div class="profile-object__top">
+										<ul class="profile-object__list visible">
+											<li class="profile-object__item">
+												<a href="./profile-trips.html" class="profile-object__link">Предстоящие</a>
+											</li>
+											<li class="profile-object__item">
+												<a href="./profile-trips-completed.html" class="profile-object__link">Завершенные</a>
+											</li>
+											<li class="profile-object__item">
+												<a href="#!" class="profile-object__link active">Отмененные</a>
+											</li>
+											<li class="profile-object__item">
+												<a href="./profile-trips-arbitration.html" class="profile-object__link">В арбитраже</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="profile-trips__items">
+									<div class="profile-trips__item">
+										<div class="profile-trips__left">
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/catalog/s1.jpg" />
+												<img
+													class="profile-trips__left-img"
+													src="./assets/img/profile/trips1.png"
+													alt="3-к комнатная квартира с 5 спальными местами"
+												/>
+											</picture>
+											<h3 class="profile-trips__left-title">3-к комнатная квартира с 5 спальными местами</h3>
+											<p class="profile-trips__left-text completed">Поездка 20-23 января 2024 г.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
