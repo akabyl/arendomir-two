@@ -8,9 +8,13 @@
 @import './blocks/menu';
 @import './blocks/main';
 
+// pages Home
+@import './blocks/section';
+@import './blocks/home';
+
+
 // object pages - new object pages - catalog pages
 @import './blocks/sidebar';
-@import './blocks/section';
 @import './blocks/head';
 @import './blocks/sort';
 @import './blocks/catalog';
