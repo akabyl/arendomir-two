@@ -14,7 +14,8 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<header class="header">
+		<!-- HEADER START ********************************************************************** -->
+		<!-- <header class="header">
 			<div class="container">
 				<div class="header__row">
 					<a href="#!" class="header__logo logo">
@@ -38,6 +39,53 @@
 								<span class="user-info__name">Анатолий П.</span>
 								<span class="user-info__cabinet">Личный кабинет</span>
 							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header> -->
+		<!-- HEADER END ********************************************************************** -->
+
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info user-info-links">
+						<a href="#!" class="user-info__link-sign">
+							<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15.0469 2.96875H9.10938C8.5584 2.96934 8.03017 3.18847 7.64057 3.57807C7.25097 3.96767 7.03184 4.4959 7.03125 5.04688V8.90625H12.7227L10.7678 6.95096C10.6611 6.8387 10.6026 6.68922 10.6045 6.5344C10.6065 6.37957 10.6689 6.23164 10.7784 6.12215C10.8879 6.01267 11.0358 5.95028 11.1906 5.9483C11.3455 5.94632 11.495 6.00489 11.6072 6.11154L14.576 9.08029C14.6872 9.19163 14.7497 9.3426 14.7497 9.5C14.7497 9.6574 14.6872 9.80837 14.576 9.91971L11.6072 12.8885C11.495 12.9951 11.3455 13.0537 11.1906 13.0517C11.0358 13.0497 10.8879 12.9873 10.7784 12.8778C10.6689 12.7684 10.6065 12.6204 10.6045 12.4656C10.6026 12.3108 10.6611 12.1613 10.7678 12.049L12.7227 10.0938H7.03125V13.9531C7.03125 15.1425 8.28518 16.0312 9.40625 16.0312H15.0469C15.5978 16.0307 16.1261 15.8115 16.5157 15.4219C16.9053 15.0323 17.1244 14.5041 17.125 13.9531V5.04688C17.1244 4.4959 16.9053 3.96767 16.5157 3.57807C16.1261 3.18847 15.5978 2.96934 15.0469 2.96875ZM3.46875 8.90625C3.31128 8.90625 3.16026 8.96881 3.04891 9.08016C2.93756 9.1915 2.875 9.34253 2.875 9.5C2.875 9.65747 2.93756 9.8085 3.04891 9.91985C3.16026 10.0312 3.31128 10.0938 3.46875 10.0938H7.03125V8.90625H3.46875Z"
+									fill="#4F4F4F"
+								/>
+							</svg>
+							<span>Войти</span>
+						</a>
+						<a href="#!" class="user-info__link-sign registration">
+							<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.0001 3.16699C10.8399 3.16699 11.6454 3.50062 12.2393 4.09449C12.8331 4.68835 13.1667 5.49381 13.1667 6.33366C13.1667 7.17351 12.8331 7.97897 12.2393 8.57283C11.6454 9.1667 10.8399 9.50033 10.0001 9.50033C9.16023 9.50033 8.35477 9.1667 7.76091 8.57283C7.16704 7.97897 6.83341 7.17351 6.83341 6.33366C6.83341 5.49381 7.16704 4.68835 7.76091 4.09449C8.35477 3.50062 9.16023 3.16699 10.0001 3.16699ZM10.0001 11.0837C13.4992 11.0837 16.3334 12.5007 16.3334 14.2503V15.8337H3.66675V14.2503C3.66675 12.5007 6.50091 11.0837 10.0001 11.0837Z"
+									fill="#4F4F4F"
+								/>
+							</svg>
+							<span>Регистрация</span>
 						</a>
 					</div>
 					<div class="header__menu menu">
@@ -95,13 +143,17 @@
 								/>
 								<label class="object-item__label sidebar__price-text" for="type-rental">Посуточно</label>
 								<input
-									class="object-item__input "
+									class="object-item__input"
 									type="radio"
 									id="type-rental2"
 									name="rental"
 									value="Помесячно"
 								/>
-								<label class="object-item__label sidebar__price-text sidebar__price-text-out" for="type-rental2">Помесячно</label>
+								<label
+									class="object-item__label sidebar__price-text sidebar__price-text-out"
+									for="type-rental2"
+									>Помесячно</label
+								>
 
 								<!-- <button class="sidebar__price-text active-text">Посуточно</button> -->
 								<!-- <button class="sidebar__price-text sidebar__price-text-out">Помесячно</button> -->

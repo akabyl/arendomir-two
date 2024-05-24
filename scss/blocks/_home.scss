@@ -607,6 +607,8 @@
 	}
 	.home__inner {
 		padding: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 		background-position: left;
 		display: flex;
 		flex-direction: column;
@@ -623,7 +625,7 @@
 	.home__text {
 		font-size: 14px;
 		line-height: 16px;
-		max-width: 148px;
+		max-width: 125px;
 		top: 0;
 	}
 	.home__bottom {
@@ -892,7 +894,7 @@
     flex-basis: 165px;
   }
   .service__list .service__item-5 {
-    flex-basis: 340px;
+    flex-basis: 330px;
   }
   .cards__item {
     max-width: 165px;
