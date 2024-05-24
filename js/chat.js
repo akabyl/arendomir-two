@@ -72,3 +72,18 @@ const calendar = new VanillaCalendar('#modal-calendar', {
 	},
 });
 calendar.init();
+
+const back = document.querySelector('.back');
+const chatContent = document.querySelector('.chat-content');
+const users = document.querySelectorAll('.chat-sidebar__item');
+
+back.addEventListener('click', () => {
+	chatContent.classList.add('closed');
+});
+
+users.forEach(user =>
+	user.addEventListener('click', () => {
+		user.classList.contains('selected') ? chatContent.classList.remove('closed') : null;
+		console.log('123');
+	})
+);
