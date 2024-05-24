@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Завершение регистраций</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="main__wrapper">
+					<div class="main__confirm main-confirm main-confirm-sublease">
+						<h2 class="main-confirm__title title">
+							Прикрепите согласие <br />
+							собственника на субаренду
+						</h2>
+						<div class="main-confirm__inner">
+							<div class="main-confirm__left">
+								<p class="main-confirm__text">
+									Согласие на право субаренды может быть в виде условий договора аренды, либо в виде
+									письменного согласия собственника
+								</p>
+								<form action="/upload" method="post" enctype="multipart/form-data">
+									<h2 class="main-register__passport-title main-confirm__input-title">Файл</h2>
+
+									<div class="file-input-container" id="file-input-container-1">
+										<input
+											type="file"
+											class="file-input"
+											id="sublease"
+											accept=".pdf,.jpg,.jpeg,.png"
+											required
+										/>
+										<label
+											for="sublease"
+											class="file-input-label"
+											id="file-input-label"
+											data-default-text="Прикрепить согласие собственника..."
+										>
+											<img class="skrepka" src="./assets/img/reg/skrepka.svg" alt="Прикрепить" /> Прикрепить согласие собственника...
+										</label>
+										<button type="button" class="remove-file-btn" id="remove-btn-1">
+											<svg
+												width="10"
+												height="10"
+												viewBox="0 0 10 10"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M0.914551 0.914062L5.00026 4.99978M9.08598 9.08549L5.00026 4.99978M5.00026 4.99978L0.914551 9.08549M5.00026 4.99978L9.08598 0.914062"
+													stroke="#BDBDBD"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+									</div>
+
+									<button type="submit" class="main-register__btn">
+										<span>Подтвердить права</span>
+									</button>
+								</form>
+							</div>
+							<div class="main-confirm__right">
+								<h3 class="main-confirm__right-title">Как получить выписку?</h3>
+								<ol class="main-confirm__list">
+									<li class="main-confirm__item">
+										Получить оригинал у собственника, либо его фото
+									</li>
+									<li class="main-confirm__item">Прикрепите файл в формате PDF или JPG здесь</li>
+						
+								</ol>
+								<a class="main-confirm__link" href="#!">
+									<span>Скачать пример согласия</span>
+									<img src="./assets/img/confirm/down.svg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./js/reg.js"></script>
+	</body>
+</html>

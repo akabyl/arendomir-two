@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Завершение регистраций</title>
+		<link rel="icon" href="./assets/img/icons/logo.svg" />
+		<link rel="stylesheet" href="./assets/fonts/suisseintl/suisseintl.css" />
+		<link rel="stylesheet" href="./assets/fonts/tilda/tilda.css" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#!" class="header__logo logo">
+						<img class="logo__img" src="./assets/img/icons/logo.svg" alt="Арендомир гланая" />
+					</a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#!" class="header__link">Юридическая консультация</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">База знаний</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link">Акции</a>
+						</li>
+					</ul>
+					<div class="header__user user-info">
+						<a class="user-info__link" href="#!">
+							<img class="user-info__img" src="./assets/img/header/avatar.jpg" alt="" />
+							<p class="user-info__text">
+								<span class="user-info__name">Анатолий П.</span>
+								<span class="user-info__cabinet">Личный кабинет</span>
+							</p>
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button class="menu__btn">
+							<img src="./assets/img/icons/menu.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="main__wrapper">
+					<div class="main-pay">
+						<div class="modal-pay">
+							<h2 class="modal-pay__title">
+								Чтобы изменить ФИО вам нужно отправить паспорт с новыми данными на проверку
+							</h2>
+							<p class="modal-pay__text">
+								Стоимость запроса - 100 руб., после проверки, Ф.И.О. будет изменено автоматически
+							</p>
+							<form action="" class="modal-pay__form">
+								<h2 class="main-register__passport-title">Главная страница с фотографией</h2>
+								<div class="file-input-container" id="file-input-container-1">
+									<input
+										type="file"
+										class="file-input"
+										id="passport"
+										accept=".pdf,.jpg,.jpeg,.png"
+										required
+									/>
+									<label
+										for="passport"
+										class="file-input-label"
+										id="file-input-label"
+										data-default-text="Прикрепить главную страницу"
+									>
+										<img class="skrepka" src="./assets/img/reg/skrepka.svg" alt="Прикрепить" /> Прикрепить
+										главную страницу
+									</label>
+									<button type="button" class="remove-file-btn" id="remove-btn-1">
+										<svg
+											width="10"
+											height="10"
+											viewBox="0 0 10 10"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M0.914551 0.914062L5.00026 4.99978M9.08598 9.08549L5.00026 4.99978M5.00026 4.99978L0.914551 9.08549M5.00026 4.99978L9.08598 0.914062"
+												stroke="#BDBDBD"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+
+								<h2 class="main-register__passport-title">Селфи с паспортом</h2>
+								<div class="img-wrap__mobile">
+									<img class="input-reg-img" src="./assets/img/reg/selfie.png" alt="" />
+									<div class="img-linear"></div>
+								</div>
+								<div class="file-input-container" id="file-input-container-2">
+									<input type="file" class="file-input" id="selfie" accept=".pdf,.jpg,.jpeg,.png" required />
+									<label
+										for="selfie"
+										class="file-input-label"
+										id="file-input-label"
+										data-default-text="Прикрепить селфи с паспортом"
+									>
+										<img class="skrepka" src="./assets/img/reg/skrepka.svg" alt="Прикрепить" /> Прикрепить
+										селфи с паспортом
+									</label>
+									<button type="button" class="remove-file-btn" id="remove-btn-2">
+										<svg
+											width="10"
+											height="10"
+											viewBox="0 0 10 10"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M0.914551 0.914062L5.00026 4.99978M9.08598 9.08549L5.00026 4.99978M5.00026 4.99978L0.914551 9.08549M5.00026 4.99978L9.08598 0.914062"
+												stroke="#BDBDBD"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+
+								<button type="submit" class="main-register__btn">
+									<span>Перейти к оплате</span>
+								</button>
+								<button class="modal-exit">
+									<svg
+										width="21"
+										height="21"
+										viewBox="0 0 21 21"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							</form>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title">Введите новый номер телефона</h2>
+							<input class="modal-phone__input" type="tel" placeholder="+7" />
+							<button type="submit" class="main-register__btn">
+								<span>Подтвердить</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-user modal-w">
+							<h2 class="modal-pay__title">
+								Профиль с этим <br />
+								телефоном уже существует
+							</h2>
+							<a class="modal-user__account" href="#!">
+								<img src="./assets/img/profile/ava-mini.png" alt="" />
+								<div class="modal-user__block">
+									<h3 class="modal-user__block-title">Анатолий Г.</h3>
+									<p class="modal-user__block-text">На сервисе с августа 2024 года</p>
+								</div>
+							</a>
+							<button type="submit" class="main-register__btn">
+								<span>Войти</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-user modal-w">
+							<h2 class="modal-pay__title">Подтвердите номер</h2>
+							<p class="modal-pay__text">
+								Укажите проверочный код — он придёт на +7 925 164-33-11 в течение 2 минут.
+							</p>
+							<input class="code" type="number" placeholder="Код из смс" />
+							<div class="code-text">Получить новый код можно через <span class="countdown">02:59</span></div>
+							<div class="btns">
+								<button type="button" class="main-register__btn">
+									<span>Подтвердить</span>
+								</button>
+								<button type="button" class="main-register__btn no-accent">
+									<span>Изменить номер</span>
+								</button>
+							</div>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-user modal-w">
+							<h2 class="modal-pay__title">Подтвердите номер</h2>
+							<p class="modal-pay__text">
+								Укажите проверочный код — он придёт на +7 925 164-33-11 в течение 2 минут.
+							</p>
+							<input class="code" type="number" placeholder="Код из смс" />
+							<div class="code-text accent">Получить новый код</div>
+							<div class="btns">
+								<button type="button" class="main-register__btn">
+									<span>Подтвердить</span>
+								</button>
+								<button type="button" class="main-register__btn no-accent">
+									<span>Изменить номер</span>
+								</button>
+							</div>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title">
+								Введите <br />
+								новый E-mail
+							</h2>
+							<input class="modal-phone__input" type="email" />
+							<button type="button" class="main-register__btn">
+								<span>Подтвердить</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w email">
+							<h2 class="modal-pay__title">На ваш новый E-mail было отправлено письмо. Подтвердите его.</h2>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w email">
+							<h2 class="modal-pay__title email-title">
+								Хотите отписаться <br />
+								от E-mail рассылок?
+							</h2>
+							<p class="modal-pay__text">
+								Мы рассылаем важные уведомления, касаемо ваших поездок, вы можете потерять важные уведомления
+							</p>
+							<button type="button" class="main-register__btn email-btn">
+								<span>Отписаться</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title email-title">Ваш E-mail был исключен из списка рассылок</h2>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title email-title">
+								Вы снова <br />
+								подписаны на <br />
+								наши важные рассылки
+							</h2>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w password">
+							<h2 class="modal-pay__title email-title">Смена пароля</h2>
+							<p class="modal-pay__text">
+								После смены пароля нужно заново войти в профиль на всех устройствах
+							</p>
+							<form class="form-password" action="">
+								<label class="form-password__label" for="current-pass">
+									<h2>Текущий</h2>
+									<div class="form-password__block">
+										<button class="form-password__btn" type="button">
+											<svg
+												class="form-password__svg"
+												width="18"
+												height="18"
+												viewBox="0 0 18 18"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M15.5769 9C15.5769 8.73075 15.4314 8.5545 15.1404 8.2005C14.0754 6.9075 11.7264 4.5 8.99938 4.5C6.27238 4.5 3.92338 6.9075 2.85838 8.2005C2.56738 8.5545 2.42188 8.73075 2.42188 9C2.42188 9.26925 2.56738 9.4455 2.85838 9.7995C3.92338 11.0925 6.27238 13.5 8.99938 13.5C11.7264 13.5 14.0754 11.0925 15.1404 9.7995C15.4314 9.4455 15.5769 9.26925 15.5769 9ZM8.99938 11.25C9.59611 11.25 10.1684 11.0129 10.5904 10.591C11.0123 10.169 11.2494 9.59674 11.2494 9C11.2494 8.40326 11.0123 7.83097 10.5904 7.40901C10.1684 6.98705 9.59611 6.75 8.99938 6.75C8.40264 6.75 7.83034 6.98705 7.40838 7.40901C6.98643 7.83097 6.74937 8.40326 6.74937 9C6.74937 9.59674 6.98643 10.169 7.40838 10.591C7.83034 11.0129 8.40264 11.25 8.99938 11.25Z"
+													fill="#4F4F4F"
+												/>
+											</svg>
+										</button>
+										<input type="password" id="current-pass" class="form-password__input" />
+									</div>
+								</label>
+
+								<label class="form-password__label" for="new-pass">
+									<h2>Новый</h2>
+									<div class="form-password__block">
+										<button class="form-password__btn" type="button">
+											<svg
+												class="form-password__svg"
+												width="18"
+												height="18"
+												viewBox="0 0 18 18"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M15.5769 9C15.5769 8.73075 15.4314 8.5545 15.1404 8.2005C14.0754 6.9075 11.7264 4.5 8.99938 4.5C6.27238 4.5 3.92338 6.9075 2.85838 8.2005C2.56738 8.5545 2.42188 8.73075 2.42188 9C2.42188 9.26925 2.56738 9.4455 2.85838 9.7995C3.92338 11.0925 6.27238 13.5 8.99938 13.5C11.7264 13.5 14.0754 11.0925 15.1404 9.7995C15.4314 9.4455 15.5769 9.26925 15.5769 9ZM8.99938 11.25C9.59611 11.25 10.1684 11.0129 10.5904 10.591C11.0123 10.169 11.2494 9.59674 11.2494 9C11.2494 8.40326 11.0123 7.83097 10.5904 7.40901C10.1684 6.98705 9.59611 6.75 8.99938 6.75C8.40264 6.75 7.83034 6.98705 7.40838 7.40901C6.98643 7.83097 6.74937 8.40326 6.74937 9C6.74937 9.59674 6.98643 10.169 7.40838 10.591C7.83034 11.0129 8.40264 11.25 8.99938 11.25Z"
+													fill="#4F4F4F"
+												/>
+											</svg>
+										</button>
+										<input type="password" id="new-pass" class="form-password__input" />
+									</div>
+								</label>
+
+								<label class="form-password__label" for="again-pass">
+									<h2>Еще раз</h2>
+									<div class="form-password__block">
+										<button class="form-password__btn" type="button">
+											<svg
+												class="form-password__svg"
+												width="18"
+												height="18"
+												viewBox="0 0 18 18"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M15.5769 9C15.5769 8.73075 15.4314 8.5545 15.1404 8.2005C14.0754 6.9075 11.7264 4.5 8.99938 4.5C6.27238 4.5 3.92338 6.9075 2.85838 8.2005C2.56738 8.5545 2.42188 8.73075 2.42188 9C2.42188 9.26925 2.56738 9.4455 2.85838 9.7995C3.92338 11.0925 6.27238 13.5 8.99938 13.5C11.7264 13.5 14.0754 11.0925 15.1404 9.7995C15.4314 9.4455 15.5769 9.26925 15.5769 9ZM8.99938 11.25C9.59611 11.25 10.1684 11.0129 10.5904 10.591C11.0123 10.169 11.2494 9.59674 11.2494 9C11.2494 8.40326 11.0123 7.83097 10.5904 7.40901C10.1684 6.98705 9.59611 6.75 8.99938 6.75C8.40264 6.75 7.83034 6.98705 7.40838 7.40901C6.98643 7.83097 6.74937 8.40326 6.74937 9C6.74937 9.59674 6.98643 10.169 7.40838 10.591C7.83034 11.0129 8.40264 11.25 8.99938 11.25Z"
+													fill="#4F4F4F"
+												/>
+											</svg>
+										</button>
+										<input type="password" id="again-pass" class="form-password__input" />
+									</div>
+								</label>
+
+								<button class="form-btn" type="button">Изменить пароль</button>
+							</form>
+
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title">
+								Подключить <br />
+								двухфакторную <br />
+								аутентификацию
+							</h2>
+							<p class="modal-pay__text">
+								Для входа в аккаунт вам необходимо будет вводит код-пароль, отправленный на ваш E-mail
+							</p>
+							<button type="button" class="main-register__btn email-btn">
+								<span>Подключить</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title">Отключить двухфакторную аутентификацию</h2>
+							<button type="button" class="main-register__btn email-btn">
+								<span>Отключить</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-login modal-w form-sign">
+							<h2 class="modal-pay__title">Вход</h2>
+							<form class="form-login">
+								<input type="tel" class="form-login__inupt" placeholder="Номер телефона" />
+								<input type="password" class="form-login__inupt" placeholder="Пароль" />
+								<div class="flex-form">
+									<label class="form-login__label label-btn" for="remember">
+										<input class="form-login__checkbox" type="checkbox" id="remember" />
+										<span class="custom-checkbox"></span>
+										<span class="form-login__text">Запомнить меня</span>
+									</label>
+									<button class="form-login__btn" type="button">Забыли пароль?</button>
+								</div>
+								<button class="form-login__sign-btn">Войти</button>
+							</form>
+							<hr class="form-hr" />
+							<h2 class="modal-pay__title">Еще нет аккаунта?</h2>
+							<button class="form-login__sign-btn form-login__reg-btn">Зарегистрироваться</button>
+							<p class="copy">
+								Регистрируясь вы соглашаетесь с условиями использования сервиса и политикой конфиденциальности
+							</p>
+						</div>
+
+						<div class="modal-phone modal-w modal-phone-sign">
+							<h2 class="modal-pay__title">Введите номер телефона</h2>
+							<div class="modal-phone__center">
+								<input class="modal-phone__input" type="tel" placeholder="+7" />
+								<button type="submit" class="main-register__btn">
+									<span>Подтвердить</span>
+								</button>
+							</div>
+							<div class="modal-phone__footer">
+								<p class="modal-phone__text">Уже есть профиль?</p>
+								<button class="modal-phone__btn">Войти</button>
+							</div>
+							<div class="copy">
+								Регистрируясь вы соглашаетесь с условиями использования сервиса и политикой конфиденциальности
+							</div>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w promo-modal">
+							<h2 class="modal-pay__title">
+								Если у вас есть промокод,<br> активируйте его
+							</h2>
+							<input class="modal-phone__input" type="text" placeholder="Промокод"/>
+							<button type="button" class="main-register__btn">
+								<span>Далее</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<div class="modal-phone modal-w">
+							<h2 class="modal-pay__title">
+								Введите <br />
+								ваш E-mail
+							</h2>
+							<input class="modal-phone__input" type="email" />
+							<button type="button" class="main-register__btn">
+								<span>Подтвердить</span>
+							</button>
+							<button class="modal-exit">
+								<svg
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+										stroke="white"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./js/reg.js"></script>
+	</body>
+</html>

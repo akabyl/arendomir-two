@@ -47,8 +47,189 @@
 		</header>
 		<main class="main">
 			<div class="container">
-				<div class="main__wrapper">123</div>
+				<div class="main__wrapper">
+					<div class="main-register">
+						<div class="main-register__left">
+							<ul class="main-register__list">
+								<li class="main-register__item">
+									<span class="check"></span> <span class="t-text">Номер телефона подтвержден</span>
+								</li>
+								<li class="main-register__item">
+									<span class="check"></span> <span class="t-text">E-mail подтвержден</span>
+								</li>
+								<li class="main-register__item">
+									<span class="check"></span> <span class="t-text">Аккаунт создан</span>
+								</li>
+								<li class="main-register__item">
+									<span class="load"></span> <span class="t-text">Проверка паспорта в процессе</span>
+								</li>
+							</ul>
+							<div class="main-register__requirements">
+								<h2 class="main-register__requirements-title">
+									Требования к документам и последовательность действий:
+								</h2>
+								<ul class="main-register__requirements-list">
+									<li class="main-register__requirements-item">
+										На изображении должен уместиться главный разворот паспорта: страница с фотографией и
+										информация о том, кем и когда выдан документ
+									</li>
+									<li class="main-register__requirements-item">
+										Изображение должно быть качественным, без бликов. Не обрабатывайте его в фотошопе или
+										других визуальных редакторах
+									</li>
+									<li class="main-register__requirements-item">Формат изображения только JPG</li>
+									<li class="main-register__requirements-item">Загрузите фотографию паспорта</li>
+									<li class="main-register__requirements-item">Загрузите селфи с документом</li>
+									<li class="main-register__requirements-item">Дождитесь результатов проверки</li>
+								</ul>
+							</div>
+						</div>
+						<div class="main-register__right">
+							<div class="main-register__completing">
+								<div class="main-register__content">
+									<div class="main-register__content-top">
+										<h2 class="main-register__title">Завершение регистрации</h2>
+										<span>4/4</span>
+									</div>
+									<div class="main-register__info">
+										<h3 class="main-register__info-title">Проверка паспорта</h3>
+										<p class="main-register__info-text">
+											Для проверки паспортных данных мы используем сервис Beorg. Он проверяет документы на
+											действительность и подлинность. Интернет-сервис «АРЕНДОМИР» не хранит у себя данные и
+											использует их строго в целях проверки при регистрации, чтобы исключить посреднико
+										</p>
+										<p class="main-register__info-text">
+											К проверке допускаются только паспорта граждан РФ и Республики Беларусь, загранпаспорта
+											не принимаются, так как данный сервис предназначен для подачи собственниками объявлений
+											о недвижимости на территории Российской Федерации.
+										</p>
+									</div>
+									<div class="main-register__passport">
+										<h2 class="main-register__passport-title">Главная страница с фотографией</h2>
+										<form action="/upload" method="post" enctype="multipart/form-data">
+											<div class="file-input-container" id="file-input-container-1">
+												<input
+													type="file"
+													class="file-input"
+													id="passport"
+													accept=".pdf,.jpg,.jpeg,.png"
+													required
+												/>
+												<label
+													for="passport"
+													class="file-input-label"
+													id="file-input-label"
+													data-default-text="Прикрепить главную страницу"
+												>
+													<img class="skrepka" src="./assets/img/reg/skrepka.svg" alt="Прикрепить" /> Прикрепить главную
+													страницу
+												</label>
+												<button type="button" class="remove-file-btn" id="remove-btn-1">
+													<svg
+														width="10"
+														height="10"
+														viewBox="0 0 10 10"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M0.914551 0.914062L5.00026 4.99978M9.08598 9.08549L5.00026 4.99978M5.00026 4.99978L0.914551 9.08549M5.00026 4.99978L9.08598 0.914062"
+															stroke="#BDBDBD"
+															stroke-linecap="round"
+															stroke-linejoin="round"
+														/>
+													</svg>
+												</button>
+											</div>
+
+											<h2 class="main-register__passport-title">Селфи с паспортом</h2>
+											<div class="main-register__requirements main-register__requirements-mobile">
+												<h2 class="main-register__requirements-title">
+													Требования к документам и последовательность действий:
+												</h2>
+												<ul class="main-register__requirements-list">
+													<li class="main-register__requirements-item">
+														На изображении должен уместиться главный разворот паспорта: страница с фотографией
+														и информация о том, кем и когда выдан документ
+													</li>
+													<li class="main-register__requirements-item">
+														Изображение должно быть качественным, без бликов. Не обрабатывайте его в фотошопе
+														или других визуальных редакторах
+													</li>
+													<li class="main-register__requirements-item">Формат изображения только JPG</li>
+													<li class="main-register__requirements-item">Загрузите фотографию паспорта</li>
+													<li class="main-register__requirements-item">Загрузите селфи с документом</li>
+													<li class="main-register__requirements-item">Дождитесь результатов проверки</li>
+												</ul>
+											</div>
+											<div class="img-wrap">
+												<img class="input-reg-img" src="./assets/img/reg/selfie.png" alt="" />
+												<div class="img-linear"></div>
+											</div>
+											<div class="file-input-container" id="file-input-container-2">
+												<input
+													type="file"
+													class="file-input"
+													id="selfie"
+													accept=".pdf,.jpg,.jpeg,.png"
+													required
+												/>
+												<label
+													for="selfie"
+													class="file-input-label"
+													id="file-input-label"
+													data-default-text="Прикрепить селфи с паспортом"
+												>
+													<img class="skrepka" src="./assets/img/reg/skrepka.svg" alt="Прикрепить" /> Прикрепить селфи с
+													паспортом
+												</label>
+												<button type="button" class="remove-file-btn" id="remove-btn-2">
+													<svg
+														width="10"
+														height="10"
+														viewBox="0 0 10 10"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M0.914551 0.914062L5.00026 4.99978M9.08598 9.08549L5.00026 4.99978M5.00026 4.99978L0.914551 9.08549M5.00026 4.99978L9.08598 0.914062"
+															stroke="#BDBDBD"
+															stroke-linecap="round"
+															stroke-linejoin="round"
+														/>
+													</svg>
+												</button>
+											</div>
+
+											<button type="submit" class="main-register__btn">
+												<span>Продолжить</span>
+												<svg
+													width="13"
+													height="8"
+													viewBox="0 0 13 8"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M1 4H6.75H12.5M12.5 4L9.5 1M12.5 4L9.5 7"
+														stroke="white"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													/>
+												</svg>
+											</button>
+										</form>
+									</div>
+								</div>
+								<div class="main-register__img">
+									<img src="./assets/img/reg/reg-bg.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<script src="./js/reg.js"></script>
 		</main>
 	</body>
 </html>

@@ -1,0 +1,46 @@
+.user-page__inner {
+	.section-profile {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.user-page_inner__reviews {
+	display: flex;
+	gap: 10px;
+	margin-top: 30px;
+	.rewiews__info {
+	}
+}
+.user-page_inner__left,
+.user-page_inner__right {
+	max-width: 675px;
+	width: 100%;
+}
+
+@media (max-width: 1120px) {
+	.user-page_inner__reviews {
+		.rewiews__date {
+			display: none;
+		}
+		.rewiews__user {
+			background-color: #f2f2f2;
+			border-radius: 15px;
+			padding: 5px 10px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.user-page_inner__reviews {
+		flex-direction: column;
+		.rewiews__user {
+			background-color: transparent;
+			border-radius: 15px;
+			padding: 5px 10px;
+		}
+		.rewiews__date {
+			display: block;
+		}
+	}
+}

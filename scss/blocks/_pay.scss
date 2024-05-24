@@ -1,0 +1,286 @@
+.main-pay {
+	display: flex;
+	align-items: start;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+
+.modal-pay {
+	max-width: 430px;
+	padding: 21px;
+	background-color: #fff;
+	border-radius: 20px;
+	position: relative;
+}
+
+.modal-pay__title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 21.6px;
+	color: var(--title-color);
+	margin-bottom: 12px;
+	max-width: 326px;
+}
+
+.modal-pay__text {
+	line-height: 16.8px;
+	max-width: 321px;
+	margin-bottom: 21px;
+}
+
+.img-wrap__mobile {
+	position: relative;
+}
+
+.modal-phone {
+	max-width: 235px;
+	.main-register__btn {
+		padding: 10px 0;
+	}
+}
+.modal-phone__input {
+	display: inline-block;
+	margin-bottom: 10px;
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+	outline: none;
+	padding: 10px;
+	width: 100%;
+}
+
+.modal-exit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: var(--accent-color);
+	border-radius: 0 20px 0 13px;
+	padding: 7px 9px 8px 8px;
+}
+
+.modal-w {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 21px;
+	position: relative;
+}
+
+.modal-user {
+	.modal-pay__title {
+		max-width: 251px;
+	}
+	.main-register__btn {
+		max-width: 98px;
+		padding: 10px 0;
+	}
+}
+
+.modal-user__account {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+.modal-user__block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.modal-user__block-title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 15px;
+	color: var(--title-color);
+}
+.modal-user__block-text {
+	line-height: 12px;
+	color: #828282;
+}
+
+.modal-user {
+}
+.modal-w {
+}
+.modal-pay__title {
+}
+.modal-pay__text {
+	text-wrap: balance;
+}
+.code {
+	max-width: 124px;
+	padding: 10px;
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+	display: inline-block;
+	margin-bottom: 7px;
+}
+.code-text {
+	margin-bottom: 12px;
+	line-height: 15px;
+	color: #828282;
+	&.accent {
+		color: var(--accent-color);
+	}
+}
+.countdown {
+}
+.btns {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	.main-register__btn {
+		max-width: 100%;
+	}
+	.no-accent {
+		background-color: #bdbdbd;
+	}
+}
+.modal-exit {
+}
+
+.email {
+	max-width: 289px;
+	.modal-pay__title {
+		max-width: 230px;
+	}
+}
+.email-title {
+	max-width: 190px;
+}
+.email-btn {
+	max-width: 143px;
+}
+
+.password {
+	max-width: 263px;
+}
+
+.form-password {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.form-password__label {
+	h2 {
+		margin-bottom: 11px;
+	}
+}
+.form-password__block {
+	position: relative;
+	height: 100%;
+}
+.form-password__input {
+	padding: 9px 30px 9px 10px;
+	max-width: 221px;
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+}
+.form-password__btn {
+	position: absolute;
+	right: 10px;
+	top: 9px;
+}
+
+.form-btn {
+	background-color: var(--accent-color);
+	color: #fff;
+	padding: 20px 0;
+	max-width: 100%;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 10px;
+	border-radius: 23px;
+}
+
+.form-sign {
+	max-width: 310px;
+}
+
+.modal-pay__title {
+}
+.form-login {
+}
+.form-login__inupt {
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+	&:not(:last-child) {
+		margin-bottom: 11px;
+	}
+}
+.flex-form {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.form-login__label {
+	.custom-checkbox {
+		width: 15px;
+		height: 15px;
+	}
+
+}
+.form-login__checkbox {
+}
+.form-login__text {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 15.12px;
+}
+.form-login__btn {
+	font-weight: 500;
+	color: var(--accent-color);
+}
+.form-login__sign-btn {
+	padding: 10px 30px;
+	display: inline-block;
+	background-color: var(--accent-color);
+	color: #fff;
+	border-radius: 10px;
+}
+.form-hr {
+	margin: 30px 0 25px 0;
+}
+.form-login__reg-btn {
+	margin-bottom: 8px;
+}
+.copy {
+	line-height: 15.12px;
+	color: #828282;
+	max-width: 218px;
+}
+
+.modal-phone-sign {
+  max-width: 351px;
+}
+
+.modal-phone__center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  .modal-phone__input {
+    margin-bottom: 0;
+  }
+  .main-register__btn {
+    border: 1px solid transparent;
+  }
+}
+.modal-phone__footer {
+  display: flex;
+  font-weight: 500;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+.modal-phone__btn {
+  color: var(--accent-color);
+}
+
+.promo-modal {
+  max-width: 312px;
+  width: 100%;
+}
