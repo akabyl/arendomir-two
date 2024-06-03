@@ -2,7 +2,7 @@
 	background-color: #fff;
 	border-radius: 15px;
 	padding: 45px 20px;
-	max-width: 1160px;
+	// max-width: 1160px;
 	width: 100%;
 	text-align: center;
 	display: flex;
@@ -38,7 +38,9 @@
 	padding: 19px 0;
 	color: var(--accent-color);
 	border-radius: 13px;
-  display: inline-block;
+	display: inline-block;
+	transition: all 0.2s ease-in;
+
 	span {
 		display: inline-block;
 		margin-right: 5px;
@@ -46,11 +48,18 @@
 }
 .completed-link.accent {
 	background-color: var(--accent-color);
-  color: #fff;
-  margin-bottom: 10px;
+	color: #fff;
+	margin-bottom: 10px;
+	&:hover {
+		background-color: #1acbcf;
+	}
 }
 .completed-link.border {
-  border: 1px solid var(--accent-color);
+	border: 1px solid var(--accent-color);
+	&:hover {
+		background-color: #2cacaf;
+		color: #fff;
+	}
 }
 @media (max-width: 576px) {
 	.main-verification__title {

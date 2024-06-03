@@ -93,9 +93,9 @@
 					</div>
 					<div class="chat__content chat-content">
 						<div class="chat-content__head">
-              <button class="back">
-                <img src="./assets/img/chat/back.svg" alt="">
-              </button>
+							<button class="back">
+								<img src="./assets/img/chat/back.svg" alt="" />
+							</button>
 							<img src="./assets/img/chat/head.png" alt="" />
 							<div class="chat-content__head-block">
 								<p class="chat-content__head-text">3-к комнатная квартира с 5 спальными местами</p>
@@ -149,115 +149,82 @@
 									</div>
 								</li>
 
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
+								<div class="modal-message closed">
+									<div class="modal">
+										<button class="close-modal">
+											<svg
+												width="21"
+												height="21"
+												viewBox="0 0 21 21"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M15.5 15.5L5.5 5.5M15.5 5.5L5.5 15.5"
+													stroke="#224646"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</button>
+										<div class="modal__inner">
+											<div class="modal__left">
+												<div class="calendar-modal" id="modal-calendar"></div>
+												<button class="reset">Сбросить</button>
+											</div>
+											<div class="modal__right">
+												<h2 class="modal__title">
+													Отправляя свои контактные данные <br />
+													вы инициируете сделку
+												</h2>
+												<p class="modal__text">
+													Договоритесь с хозяином объекта о конкретных датах поездки и выберите их в календаре
+												</p>
+												<div class="modal__info">
+													<p class="modal__info-text danger">
+														<img src="./assets/img/chat/danger.svg" alt="" />
+														<span>Не обменивайтесь контактными данными, если вы не уверены в поездке</span>
+													</p>
+													<p class="modal__info-text succes">
+														<img src="./assets/img/chat/success.svg" alt="" />
+														<span>С вашего баланса будет списана 1 поездка</span>
+													</p>
+												</div>
+												<button class="modal__btn">Отправить контактные данные</button>
+											</div>
+										</div>
 									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__left">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
-
-								<li class="messages__right">
-									<div class="message-text">
-										<p class="messages__text">Привет! Как дела?</p>
-										<span class="messages__date">02.05.24, 08:36</span>
-									</div>
-								</li>
+								</div>
 							</ul>
 						</div>
 						<div class="chat-content__footer">
 							<button class="chat-content__footer-btn">Отправить контактные данные</button>
-							<div class="chat-content__footer-send">
+							<!-- <div class="chat-content__footer-send">
+
 								<textarea
 									class="send-message-text"
-									name=""
 									id="textarea-chat"
 									placeholder="Сообщение..."
 								></textarea>
+
 								<button class="send">
+									<svg
+										width="29"
+										height="29"
+										viewBox="0 0 29 29"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4.38887 2.5645C3.30923 2.02498 2.11419 3.05509 2.48817 4.2024L4.91329 11.6367C4.98188 11.8467 5.10674 12.0339 5.2743 12.1779C5.44186 12.3219 5.6457 12.4172 5.86364 12.4535L15.4457 14.0503C15.9502 14.1349 15.9502 14.8599 15.4457 14.9445L5.86425 16.5413C5.6463 16.5775 5.44246 16.6729 5.27491 16.8169C5.10735 16.9609 4.98248 17.1481 4.91389 17.3581L2.48817 24.7966C2.11358 25.9445 3.30923 26.9747 4.38887 26.4351L25.8332 15.716C26.8355 15.2145 26.8355 13.7845 25.8332 13.2836L4.38887 2.5645Z"
+											fill="#BDBDBD"
+										/>
+									</svg>
+								</button>
+							</div> -->
+							<div class="textarea-container">
+								<textarea class="custom-textarea" placeholder="Сообщение..."></textarea>
+								<button class="send-button">
 									<svg
 										width="29"
 										height="29"
@@ -277,7 +244,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal-wrapper closed">
+		<!-- <div class="modal-wrapper closed">
 			<div class="modal">
 				<button class="close-modal">
 					<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -292,10 +259,13 @@
 				<div class="modal__inner">
 					<div class="modal__left">
 						<div class="calendar-modal" id="modal-calendar"></div>
-            <button class="reset">Сбросить</button>
+						<button class="reset">Сбросить</button>
 					</div>
 					<div class="modal__right">
-						<h2 class="modal__title">Отправляя свои контактные данные <br> вы инициируете сделку</h2>
+						<h2 class="modal__title">
+							Отправляя свои контактные данные <br />
+							вы инициируете сделку
+						</h2>
 						<p class="modal__text">
 							Договоритесь с хозяином объекта о конкретных датах поездки и выберите их в календаре
 						</p>
@@ -313,8 +283,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="modal-wrapper closed">
+		</div> -->
+		<!-- <div class="modal-wrapper closed">
 			<div class="modal modal-2">
 				<div class="modal__inner">
 					<h2 class="modal__title">
@@ -339,7 +309,10 @@
 		<div class="modal-wrapper closed">
 			<div class="modal modal-2">
 				<div class="modal__inner">
-					<h2 class="modal__title">Поздравляем! <br> Договоренности о поездке утверждены</h2>
+					<h2 class="modal__title">
+						Поздравляем! <br />
+						Договоренности о поездке утверждены
+					</h2>
 					<div class="modal-date">
 						<img src="./assets/img/chat/date.svg" alt="" />
 						<span>19.12.2024 - 05.01.2025</span>
@@ -349,7 +322,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js"></script>
 		<script src="./js/chat.js"></script>

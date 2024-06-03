@@ -83,6 +83,8 @@
 }
 .main-register__completing {
 	display: flex;
+	border-radius: 15px;
+	overflow: hidden;
 }
 .main-register__content {
 	padding: 40px;
@@ -263,9 +265,13 @@
 	padding: 25px 0;
 	color: #fff;
 	border-radius: 15px;
+	transition: background-color 0.2s ease-in;
 	span {
 		display: inline-block;
 		margin-right: 5px;
+	}
+	&:hover {
+		background-color: #1acbcf;
 	}
 }
 .main-register__img {
@@ -277,6 +283,11 @@
 
 .main-register__requirements-mobile {
 	display: none;
+}
+@media (max-width: 1367px) {
+	.main-register__img {
+		max-width: 394px;
+	}
 }
 
 @media (max-width: 1120px) {

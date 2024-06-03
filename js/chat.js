@@ -43,8 +43,7 @@ window.addEventListener('load', () => {
 // });
 
 const btnModal = document.querySelector('.chat-content__footer-btn');
-const modalWrap = document.querySelector('.modal-wrapper');
-const modal = document.querySelector('.modal');
+const modalWrap = document.querySelector('.modal-message');
 const closeModal = document.querySelector('.close-modal');
 
 btnModal.addEventListener('click', () => {
@@ -84,6 +83,15 @@ back.addEventListener('click', () => {
 users.forEach(user =>
 	user.addEventListener('click', () => {
 		user.classList.contains('selected') ? chatContent.classList.remove('closed') : null;
-		console.log('123');
 	})
 );
+
+document.addEventListener('DOMContentLoaded', () => {
+	const rulesToggle = document.querySelector('.chat-sidebar__rules');
+	const rulesDesc = document.querySelector('.chat-sidebar__rules-desc');
+
+	rulesToggle.addEventListener('click', () => {
+		const isExpanded = rulesDesc.classList.toggle('show');
+		rulesToggle.classList.toggle('hide', isExpanded);
+	});
+});

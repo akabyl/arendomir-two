@@ -12,7 +12,7 @@
 
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
-	<body>
+	<body data-page-id="page1">
 		<header class="header">
 			<div class="container">
 				<div class="header__row">
@@ -77,21 +77,22 @@
 
 					<div class="profile__content">
 						<div class="profile__section profile-object">
-							<div class="profile-object__top">
+							<div class="profile-object__top" id="nav-container">
 								<ul class="profile-object__list">
 									<li class="profile-object__item">
-										<a href="#!" class="profile-object__link">Для аренды</a>
+										<a href="#!" class="profile-object__link active" data-link="rental">Для аренды</a>
 									</li>
 									<li class="profile-object__item">
-										<a href="#!" class="profile-object__link active">Для обмена</a>
+										<a href="#!" class="profile-object__link" data-link="exchange">Для обмена</a>
 									</li>
 									<li class="profile-object__item">
-										<a href="#!" class="profile-object__link">Для визитов</a>
+										<a href="#!" class="profile-object__link" data-link="visits">Для визитов</a>
 									</li>
 									<li class="profile-object__item">
-										<a href="#!" class="profile-object__link">Черновики</a>
+										<a href="#!" class="profile-object__link" data-link="drafts">Черновики</a>
 									</li>
 								</ul>
+								<div id="line"></div>
 							</div>
 							<div class="profile-object__items">
 								<div class="profile-object__block">
@@ -201,7 +202,6 @@
 											<button class="profile-object__button delete">Удалить</button>
 										</div>
 									</div>
-
 								</div>
 							</div>
 							<button class="profile-object__bottom">
@@ -212,6 +212,26 @@
 					</div>
 				</div>
 			</div>
+			<svg width="0" height="0">
+				<defs>
+					<filter id="smoothCorners" x="0" y="0" width="200%" height="200%">
+						<!-- <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blurred" /> -->
+						<feColorMatrix
+							in="blurred"
+							type="matrix"
+							values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 1 0"
+							result="smoothed"
+						/>
+						<feMerge>
+							<feMergeNode in="smoothed" />
+							<feMergeNode in="SourceGraphic" />
+						</feMerge>
+					</filter>
+				</defs>
+			</svg>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/profile.js"></script>

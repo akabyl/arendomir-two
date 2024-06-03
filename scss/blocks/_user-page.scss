@@ -18,6 +18,20 @@
 	width: 100%;
 }
 
+.user-page__item {
+	cursor: auto;
+}
+
+.user-page__descr {
+	max-height: 100%;
+}
+.user-page__hr {
+	margin-top: 15px;
+}
+
+.user-page__label {
+	cursor: auto;
+}
 @media (max-width: 1120px) {
 	.user-page_inner__reviews {
 		.rewiews__date {

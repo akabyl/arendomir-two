@@ -55,6 +55,20 @@
 	background-color: var(--accent-color);
 	border-radius: 0 20px 0 13px;
 	padding: 7px 9px 8px 8px;
+	transition: all 0.2s ease-in;
+	&:hover {
+		background-color: #1acbcf;
+	}
+}
+.modal-exit svg {
+	transition: transform 0.2s ease-in;
+}
+.modal-exit:hover svg {
+	transform: rotate(90deg);
+}
+
+.modal-input {
+	margin-bottom: 20px;
 }
 
 .modal-w {
@@ -79,6 +93,9 @@
 	align-items: center;
 	gap: 12px;
 	margin-bottom: 20px;
+	img {
+		max-width: 60px;
+	}
 }
 .modal-user__block {
 	display: flex;
@@ -222,7 +239,6 @@
 		width: 15px;
 		height: 15px;
 	}
-
 }
 .form-login__checkbox {
 }
@@ -255,32 +271,32 @@
 }
 
 .modal-phone-sign {
-  max-width: 351px;
+	max-width: 351px;
 }
 
 .modal-phone__center {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 24px;
-  .modal-phone__input {
-    margin-bottom: 0;
-  }
-  .main-register__btn {
-    border: 1px solid transparent;
-  }
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 24px;
+	.modal-phone__input {
+		margin-bottom: 0;
+	}
+	.main-register__btn {
+		border: 1px solid transparent;
+	}
 }
 .modal-phone__footer {
-  display: flex;
-  font-weight: 500;
-  gap: 7px;
-  margin-bottom: 7px;
+	display: flex;
+	font-weight: 500;
+	gap: 7px;
+	margin-bottom: 7px;
 }
 .modal-phone__btn {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .promo-modal {
-  max-width: 312px;
-  width: 100%;
+	max-width: 312px;
+	width: 100%;
 }

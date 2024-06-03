@@ -25,11 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-
-
 const swiper = document.querySelector('.swiper');
 if (swiper) {
-
 }
 const swiper2 = new Swiper('.swiper', {
 	// Navigation arrows
@@ -56,7 +53,6 @@ const swiper2 = new Swiper('.swiper', {
 		},
 	},
 });
-
 
 const calendar = new VanillaCalendar('#calendar', {
 	date: {
@@ -89,7 +85,6 @@ const calendar3 = new VanillaCalendar('#calendar3', {
 		today: new Date('2024-08-07T00:00:00.000Z'),
 	},
 	settings: {
-
 		lang: 'ru',
 		range: {
 			// disablePast: true,
@@ -103,7 +98,6 @@ const calendar4 = new VanillaCalendar('#calendar4', {
 		today: new Date('2024-09-07T00:00:00.000Z'),
 	},
 	settings: {
-
 		lang: 'ru',
 		range: {
 			// disablePast: true,
@@ -117,7 +111,6 @@ const calendar5 = new VanillaCalendar('#calendar5', {
 		today: new Date('2024-10-07T00:00:00.000Z'),
 	},
 	settings: {
-
 		lang: 'ru',
 		range: {
 			// disablePast: true,
@@ -132,7 +125,6 @@ const calendar6 = new VanillaCalendar('#calendar6', {
 		today: new Date('2024-11-07T00:00:00.000Z'),
 	},
 	settings: {
-
 		lang: 'ru',
 		range: {
 			// disablePast: true,
@@ -147,7 +139,6 @@ const calendar7 = new VanillaCalendar('#calendar7', {
 		today: new Date('2024-12-07T00:00:00.000Z'),
 	},
 	settings: {
-
 		lang: 'ru',
 		range: {
 			// disablePast: true,
@@ -156,3 +147,97 @@ const calendar7 = new VanillaCalendar('#calendar7', {
 	},
 });
 calendar7.init();
+
+
+
+
+const form = document.querySelector('.new-object');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+	event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+	// Получаем данные из формы
+	const formData = new FormData(form);
+
+	// Преобразуем данные в объект JSON
+	const jsonData = {};
+	formData.forEach((value, key) => {
+		jsonData[key] = value;
+	});
+
+	// Отправляем данные на сервер
+	fetch('https://arendomir.site/php/api/rent/set/', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(jsonData),
+	})
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			return response.json();
+		})
+		.then(data => {
+			console.log('Success:', data);
+			// Действия при успешной отправке данных
+		})
+		.catch(error => {
+			console.error('Error:', error);
+			// Действия при ошибке отправки данных
+		});
+}
+
+// const url = 'https://arendomir.site/php/api/rent/set/';
+
+// const data = {
+// 	id_house: null, // Если объект новый, иначе указываем ID
+// 	city: 'Москва',
+// 	type_house: 3, // 0 - спальное место, 1 - комната, 2 - студия, 3 - квартира, 4 - дача, 5 - часть дома, 6 - дом
+// 	amount_room: 2,
+// 	amount_bathroom: 1,
+// 	amount_bed: 3,
+// 	bathroom_data: JSON.stringify([0, 0]), // Два совмещенных санузла
+// 	type_ownership: 0, // 0 - собственность, 1 - долгосрочная аренда
+// 	square: 45,
+// 	address: 'ул. Пушкина, д. 10',
+// 	appliances: JSON.stringify([2, 4]), // Кондиционер и стиральная машина
+// 	renovation: 2, // 0 - требуется, 1 - эконом, 2 - евро
+// 	allowed_kid: 1,
+// 	allowed_pet: 0,
+// 	allowed_smoke: 0,
+// 	allowed_invalid: 1,
+// 	allowed_single: 1,
+// 	has_parking: 1,
+// 	has_transfer: 0,
+// 	has_insurance: 1,
+// 	has_lift: 1,
+// 	has_balcony: 1,
+// 	has_housing_services: 1,
+// 	bus_station: 1, // 0 - менее 5 минут, 1 - 5-10 минут, и т.д.
+// 	beach: 3,
+// 	culture: 2,
+// 	mall: 1,
+// 	park: 0,
+// 	attraction: 4,
+// 	price_daily: 1500,
+// 	price_weekly: 1400,
+// 	price_monthly: 1200,
+// };
+
+// fetch(url, {
+// 	method: 'POST',
+// 	headers: {
+// 		'Content-Type': 'application/json',
+// 	},
+// 	body: JSON.stringify(data),
+// })
+// 	.then(response => response.json())
+// 	.then(data => {
+// 		console.log('Success:', data);
+// 	})
+// 	.catch(error => {
+// 		console.error('Error:', error);
+// 	});

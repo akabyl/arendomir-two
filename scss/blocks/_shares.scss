@@ -9,13 +9,17 @@
 }
 .main-shares__item {
 	padding: 35px 35px 0 35px;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 	max-width: 674px;
 	&:nth-child(1) {
-		background: radial-gradient(223.18% 138.94% at -60.79% 6.51%, #54acac 100%, #fff 0%);
+		background: radial-gradient(
+			186.53% 88.38% at 109.4% 72.98%,
+			rgb(173, 205, 253) 0%,
+			rgb(77, 136, 223) 100%
+		);
 		// background-image: url('./../assets/img/shares/bg1.png');
 		img {
 			margin-top: 40px;
@@ -50,6 +54,7 @@
 }
 .main-shares__item-title {
 	font-size: 30px;
+	line-height: 25px;
 	font-weight: 600;
 	margin-bottom: 15px;
 	color: #fff;
@@ -75,7 +80,7 @@
 		&:nth-child(1) {
 			img {
 				height: 246px;
-				margin-top: 30px;
+				margin-top: 25px;
 			}
 		}
 		&:nth-child(2) {
@@ -142,33 +147,33 @@
 @media (max-width: 768px) {
 	.main-shares__item {
 		flex-direction: column;
-    gap: 10px;
+		gap: 10px;
 		padding: 20px;
-    padding-bottom: 0;
-    img {
-      width: 100%;
-      position: relative;
-      bottom: 0;
-    }
+		padding-bottom: 0;
+		img {
+			width: 100%;
+			position: relative;
+			bottom: 0;
+		}
 		&:nth-child(1) {
-			align-items: start;
+			align-items: center;
 		}
 		&:nth-child(2) {
 			background-image: url('./../assets/img/shares/bg2-mobile.png');
-      img {
-        margin: 0;
-      }
+			img {
+				margin: 0;
+			}
 		}
 		&:nth-child(3) {
 			height: auto;
 			padding: 20px;
-      padding-bottom: 0;
+			padding-bottom: 0;
 			background-image: url('./../assets/img/shares/123.png');
 			img {
 				position: relative;
-        bottom: -35px;
-        right: 5px;
-        max-width: 275px;
+				bottom: -35px;
+				right: 5px;
+				max-width: 275px;
 			}
 		}
 		.main-shares__item-content {
@@ -178,10 +183,14 @@
 	.main-shares__item-top {
 		padding: 0;
 	}
-  .main-shares__item-title {
-    font-size: 18px;
-  }
-  .main-shares__item-text {
-    font-size: 12px;
-  }
+	.main-shares__item-title {
+		font-size: 18px;
+	}
+	.main-shares__item-text {
+		font-size: 12px;
+		max-width: 291px;
+	}
+	.main-shares__item:nth-child(3) .main-shares__item-text {
+		max-width: 211px;
+	}
 }

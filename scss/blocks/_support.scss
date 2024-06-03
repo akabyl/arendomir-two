@@ -26,10 +26,11 @@
 	border: 1px solid #bdbdbd;
 	padding: 22px;
 	outline: none;
+	resize: none;
 	&::placeholder {
 		font-size: 14px;
 		font-weight: 300;
-		line-height: 12px;
+		line-height: 16px;
 		color: #bdbdbd;
 	}
 }
@@ -42,6 +43,10 @@
 	padding: 26px 0;
 	border-radius: 15px;
 	margin-top: 20px;
+	transition: background-color 0.2s ease-in;
+	&:hover {
+		background-color: #1acbcf;
+	}
 }
 .main-support__right {
 }
@@ -93,6 +98,6 @@
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 10px;
-    margin-top: 10px;
+		margin-top: 10px;
 	}
 }

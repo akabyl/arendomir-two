@@ -192,6 +192,7 @@ html {
 
 .chat-sidebar {
   max-width: 343px;
+  width: 100%;
   border-right: 1px solid #bdbdbd;
 }
 
@@ -215,7 +216,7 @@ html {
   margin-top: 2px;
 }
 .chat-sidebar__rules.hide svg {
-  transition: transform 0.3s ease-in;
+  transition: transform 0.2s ease-in;
   transform: rotate(180deg);
 }
 
@@ -225,23 +226,27 @@ html {
   letter-spacing: 0.01em;
   color: #224646;
   text-wrap: balance;
-  transition: all 0.3s ease-in;
+  transition: max-height 0.2s ease, opacity 0.2s ease;
   margin-top: 14px;
+  text-align: justify;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  max-height: 0;
+  opacity: 0;
 }
 .chat-sidebar__rules-desc span {
   color: #f13f2d;
 }
 
-.chat-sidebar__rules-desc.hide {
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 0;
-}
-.chat-sidebar__rules-desc.hide span {
-  display: none;
+.chat-sidebar__rules-desc.show {
+  transition: all 0.2s ease-in;
+  max-height: 500px; /* Установите достаточную высоту для отображения всего текста */
+  opacity: 1;
 }
 
+.chat-sidebar__rules-desc.hide {
+  transition: all 0.2s ease-in;
+}
 .chat-sidebar__users {
   flex-grow: 1;
   overflow-y: auto;
@@ -261,7 +266,7 @@ html {
   gap: 14px;
   padding: 16px 0 16px 28px;
   border-bottom: 1px solid #bdbdbd;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   cursor: pointer;
 }
 .chat-sidebar__item:hover {
@@ -307,11 +312,11 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .chat-content.closed {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   transform: translateX(-100vw);
 }
 
@@ -326,11 +331,11 @@ html {
   max-width: 75px;
   max-height: 53px;
   border-radius: 10px;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   border: 1px solid transparent;
 }
 .chat-content__head img:hover {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   border-color: #4d88df;
 }
 
@@ -345,7 +350,7 @@ html {
   font-weight: 500;
   letter-spacing: -0.02em;
   color: #333333;
-  transition: color 0.3s ease-in;
+  transition: color 0.2s ease-in;
 }
 .chat-content__head-text:hover {
   color: #4d88df;
@@ -358,16 +363,16 @@ html {
   color: #828282;
   font-size: 16px;
   line-height: 12px;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
 }
 .chat-content__head-rate:hover {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   color: #4f4f4f;
 }
 .chat-content__head-rate:hover span {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   border-bottom: 1px solid #4f4f4f;
 }
 
@@ -410,7 +415,7 @@ html {
 .message-text {
   padding: 16px 20px;
   gap: 15px;
-  border-radius: 20px;
+  border-radius: 100px;
   align-items: center;
   display: flex;
   max-width: 595px;
@@ -418,6 +423,7 @@ html {
 
 .messages__text {
   font-size: 20px;
+  line-height: 20px;
   color: #333333;
   display: inline-block;
 }
@@ -452,13 +458,17 @@ html {
 .chat-content__footer-btn {
   background: #2cacaf;
   color: #fff;
-  padding: 20px 34px;
+  padding: 20px 35px;
   border: none;
   text-transform: uppercase;
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 15px;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.04em;
 }
 .chat-content__footer-btn:hover {
   background-color: #27ae60;
@@ -472,42 +482,36 @@ html {
 .send-message-text {
   max-width: 962px;
   width: 100%;
-  padding: 14px 65px 5px 20px;
+  padding: 24px 65px 24px 20px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   outline: none;
   font-size: 14px;
-  scrollbar-width: none; /* Для Firefox */
-  -ms-overflow-style: none; /* Для Internet Explorer и Edge */
-  overflow-y: hidden; /* Для других браузеров */
-  box-sizing: border-box;
-  word-wrap: break-word; /* Автоматический перенос слов */
-  overflow-wrap: break-word; /* Вариант для некоторых браузеров */
-  max-height: 195px;
   resize: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
+  height: 63px;
 }
 .send-message-text::-moz-placeholder {
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1;
   color: #bdbdbd;
 }
 .send-message-text::placeholder {
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1;
   color: #bdbdbd;
 }
 .send-message-text:hover, .send-message-text:focus {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   border-color: rgba(44, 172, 175, 0.5);
 }
 .send-message-text:focus ~ .send {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .send-message-text:focus ~ .send path {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   fill: #4d88df;
 }
 
@@ -516,6 +520,72 @@ html {
   z-index: 2;
   right: 17px;
   top: 12px;
+}
+
+.textarea-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 9px;
+  padding: 11px 15px 11px 20px;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.textarea-container:hover, .textarea-container:focus-within {
+  transition: all 0.2s ease-in;
+  border-color: rgba(44, 172, 175, 0.5);
+}
+
+.custom-textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  align-content: center;
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+  overflow-y: hidden; /* Для других браузеров */
+  box-sizing: border-box;
+  word-wrap: break-word; /* Автоматический перенос слов */
+  overflow-wrap: break-word; /* Вариант для некоторых браузеров */
+  transition: all 0.2s ease-in;
+}
+.custom-textarea:focus ~ .send-button {
+  transition: all 0.2s ease-in;
+}
+.custom-textarea:focus ~ .send-button path {
+  transition: all 0.2s ease-in;
+  fill: #4d88df;
+}
+
+.custom-textarea::-moz-placeholder {
+  color: #b0b0b0;
+}
+
+.custom-textarea::placeholder {
+  color: #b0b0b0;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button svg {
+  width: 24px;
+  height: 24px;
 }
 
 .modal-wrapper {
@@ -617,6 +687,10 @@ html {
   max-width: 285px;
   width: 100%;
   border-radius: 13px;
+  transition: background-color 0.2s ease-in;
+}
+.modal__btn:hover {
+  background-color: #1acbcf;
 }
 
 .modal-2 {
@@ -678,6 +752,13 @@ html {
   color: #4d88df;
   display: inline-block;
   margin-top: 5px;
+}
+
+.modal-message {
+  margin: 0 auto;
+}
+.modal-message.closed {
+  display: none;
 }
 
 @media (max-width: 1120px) {

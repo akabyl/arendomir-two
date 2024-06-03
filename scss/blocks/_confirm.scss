@@ -83,16 +83,39 @@
 	width: 100%;
 	padding: 18px 0;
 	border-radius: 13px;
+	transition: all 0.2s ease-in;
 	margin-top: auto;
+	&:hover {
+		background-color: #1466ad;
+		color: #fff;
+		transition: all 0.2s ease-in;
+		svg {
+			transition: all 0.2s ease-in;
+			.path3 {
+				fill: #fff;
+			}
+		}
+	}
+}
+.main-confirm__link-green:hover {
+	background-color: #224646;
+	transition: all 0.2s ease-in;
+	svg {
+		transition: all 0.2s ease-in;
+		path {
+			transition: all 0.2s ease-in;
+			fill: #fff;
+		}
+	}
 }
 
 .main-confirm-sublease {
 	.main-confirm__right {
 		margin-top: auto;
 	}
-  .main-confirm__item:nth-child(1) {
-    max-width: 100% ;
-  }
+	.main-confirm__item:nth-child(1) {
+		max-width: 100%;
+	}
 	.main-confirm__link {
 		padding: 26px 0;
 	}
@@ -155,12 +178,11 @@
 		padding: 14px 0;
 		max-width: 300px;
 		height: 45px;
-		font-family: Tilda Sans;
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 7.14px;
 		letter-spacing: -0.02em;
-		img {
+		svg {
 			width: 16px;
 			height: 17px;
 		}

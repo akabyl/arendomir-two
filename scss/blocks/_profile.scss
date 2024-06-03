@@ -9,6 +9,7 @@
 	background-color: #fff;
 	padding: 18px 16px;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
 	max-width: 192px;
 	width: 100%;
 }
@@ -43,6 +44,8 @@
 .profile__section {
 	background-color: #fff;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+	position: relative;
 }
 .section-profile {
 	padding: 15px 20px;
@@ -56,6 +59,8 @@
 	}
 }
 .section-profile__avatar {
+	max-width: 67px;
+	max-height: 67px;
 }
 .section-profile__right {
 }
@@ -107,6 +112,7 @@
 	// max-width: 136px;
 	width: 136px;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
 	padding: 3px;
 	color: #fff;
 	text-align: center;
@@ -118,6 +124,7 @@
 	background-color: #fff;
 	max-width: 130px;
 	border-radius: 12px;
+	filter: url(#smoothCorners);
 }
 .achievements__text {
 	font-size: 15px;
@@ -175,6 +182,7 @@
 	padding: 10px 15px;
 	background-color: #f2f2f2;
 	border-radius: 12px;
+	filter: url(#smoothCorners);
 }
 
 //  INTERESTING  END							*****************************************
@@ -183,31 +191,109 @@
 .profile-object {
 	padding: 25px 14px 25px 25px;
 }
+// .profile-object__top {
+// 	margin-bottom: 30px;
+// 	display: inline-block;
+// }
+// .profile-object__list {
+// 	display: flex;
+// 	align-items: center;
+// 	gap: 25px;
+// 	padding-bottom: 8px;
+// 	border-bottom: 2px solid #bdbdbd;
+// 	// max-width: 368px;
+// }
+// .profile-object__item {
+// }
+// .	 {
+// 	color: #bdbdbd;
+// 	padding-bottom: 7px;
+// 	transition: all 0.2s ease-in;
+// 	text-wrap: nowrap;
+// 	position: relative;
+// 	transition: all 0.3s ease-in;
+// 	&::before {
+// 		content: '';
+// 		left: -40px;
+// 	}
+// 	&.active::before {
+// 		content: '';
+// 		width: 100%;
+// 		display: inline-block;
+// 		position: absolute;
+// 		bottom: 0;
+// 		height: 2px;
+// 		background-color: #333;
+// 		left: 0;
+// 		transition: all 0.3s ease-in;
+// 	}
+// 	&.active {
+// 		transition: all 0.2s ease-in;
+// 		color: var(--title-color);
+// 		// border-bottom: 2px solid #333333;
+// 	}
+// }
+
 .profile-object__top {
 	margin-bottom: 30px;
 	display: inline-block;
+	position: relative;
 }
+
 .profile-object__list {
 	display: flex;
 	align-items: center;
 	gap: 25px;
 	padding-bottom: 8px;
 	border-bottom: 2px solid #bdbdbd;
-	// max-width: 368px;
-}
-.profile-object__item {
+	position: relative;
+	position: relative;
 }
 .profile-object__link {
 	color: #bdbdbd;
 	padding-bottom: 7px;
-	transition: all 0.2s ease-in;
-	text-wrap: nowrap;
-	&.active {
-		transition: all 0.2s ease-in;
-		color: var(--title-color);
-		border-bottom: 2px solid #333333;
+	position: relative;
+	position: relative;
+	transition: color 0.3s ease-in;
+}
+
+.profile-object__link.active {
+	color: var(--title-color);
+}
+
+.profile-object__link::before {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #333333;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease-in-out;
+}
+
+.profile-object__link.active::before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.profile-object__item:hover {
+	.profile-object__link {
+		color: #828282;
+	}
+	.profile-object__link::before {
 	}
 }
+
+#line {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background: red;
+	transition: all 150ms ease-in-out;
+}
+
 .profile-object__items {
 }
 .profile-object__block {
@@ -216,12 +302,20 @@
 	max-height: 193px;
 	background-color: #f7f7ff;
 	overflow: hidden;
+	border-radius: 10px;
+	filter: url(#smoothCorners);
+
+	overflow: hidden;
 	.swiper-btn {
-		transition: opacity 0.8s ease-in;
+		transition: all 0.3s ease-in;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: rgba(53, 53, 53, 0.5);
 	}
 	.swiper-btn:hover {
-		transition: opacity 0.8s ease-in;
-		opacity: 0.5;
+		background-color: rgba(53, 53, 53);
+		transition: all 0.3s ease-in;
 	}
 	// swiper-wrapper {
 	// 	height: 193px;
@@ -285,6 +379,11 @@
 	padding: 11px 14px;
 	border: 1px dashed #d4d4d4;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+	transition: border-color 0.2s ease-in;
+	&:hover {
+		border-color: #fff;
+	}
 }
 .profile-object__item-right {
 	display: flex;
@@ -297,6 +396,12 @@
 	padding: 11px 17px;
 	background-color: #ebe9e9;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+	transition: background-color 0.2s ease-in;
+	&:hover {
+		background-color: #e0e0e0;
+	}
+
 	font-size: 12px;
 	line-height: 6.12px;
 	letter-spacing: -0.02em;
@@ -308,6 +413,19 @@
 .delete {
 	background-color: #f13f2d;
 	color: #fff;
+	transition: all 0.3s ease-in;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	filter: url(#smoothCorners);
+
+	position: relative;
+
+	&:hover {
+		background-color: #fff;
+		color: #f13f2d;
+		transition: all 0.3s ease-in;
+		border: 1px solid #f13f2d;
+	}
 }
 .profile-object__bottom {
 	display: flex;
@@ -321,6 +439,9 @@
 	margin: 0 auto;
 	background-color: #f7f7ff;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
+	transition: all 0.3s ease-in;
 	span {
 		display: inline-block;
 		width: 16px;
@@ -328,7 +449,19 @@
 		background-color: var(--accent-color);
 		color: #fff;
 		border-radius: 50%;
+		transition: all 0.3s ease-in;
 		text-align: center;
+	}
+	&:hover {
+		transition: all 0.3s ease-in;
+		background-color: var(--accent-color);
+		color: #fff;
+		span {
+			transition: all 0.3s ease-in;
+
+			background-color: #fff;
+			color: var(--accent-color);
+		}
 	}
 }
 
@@ -369,6 +502,8 @@
 		gap: 12px;
 		border: 1px solid #d4d4d4;
 		border-radius: 13px;
+		filter: url(#smoothCorners);
+
 		padding: 15px;
 		max-width: 116px;
 		width: 100%;
@@ -425,6 +560,8 @@
 	border: 1px solid #d4d4d4;
 	padding: 15px 20px;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
 	transition: all 0.2s ease-in;
 	&:hover,
 	&:focus {
@@ -441,7 +578,8 @@
 	width: 100%;
 	background-color: #f2f2f2;
 	border-radius: 13px;
-	transition: all 0.3s ease-in;
+	filter: url(#smoothCorners);
+	transition: all 0.2s ease-in;
 	padding: 13px 0;
 	font-family: var(--main-fonts);
 	font-size: 14px;
@@ -607,6 +745,8 @@
 .profile-tarrifs__item {
 	padding: 15px;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
 	display: grid;
 	grid-template-columns: 191px 157px 139px 123px;
 	gap: 18px;
@@ -663,14 +803,24 @@
 	display: inline-block;
 	padding: 22px 34px;
 	border-radius: 18px;
+	filter: url(#smoothCorners);
+	transition: all 0.3s ease-in;
 	background-color: #e0e0e0;
 	&:not(:last-child) {
 		margin-right: 10px;
+	}
+	&:hover {
+		background-color: #224646;
+		color: #fff;
 	}
 }
 .profile-tarrifs__link.accent {
 	background-color: var(--accent-color);
 	color: #fff;
+	transition: all 0.3s ease-in;
+	&:hover {
+		background-color: #1acbcf;
+	}
 }
 
 //  TARIFS 			END				*****************************************
@@ -694,6 +844,8 @@
 .profile-trips__item {
 	background-color: #f7f7f7;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
 	padding: 20px;
 	margin-bottom: 10px;
 	display: flex;
@@ -705,6 +857,8 @@
 }
 .profile-trips__left-img {
 	border-radius: 11px;
+	filter: url(#smoothCorners);
+
 	margin-bottom: 15px;
 }
 .profile-trips__left-title {
@@ -730,15 +884,24 @@
 	background-color: #ebe9e9;
 	padding: 11px 23px;
 	border-radius: 11px;
+	filter: url(#smoothCorners);
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 12px;
+	transition: background-color 0.2s ease-in;
+	&:hover {
+		background-color: #e0e0e0;
+	}
 }
 
 .profile-trips__center-btn.accent {
 	width: 100%;
 	background-color: var(--accent-color);
 	color: #fff;
+	transition: background-color 0.3s ease-in;
+	&:hover {
+		background-color: #1acbcf;
+	}
 	span {
 	}
 	path {
@@ -757,6 +920,12 @@
 	padding: 13px 15px;
 	background-color: #ebe9e9;
 	border-radius: 11px;
+	filter: url(#smoothCorners);
+	transition: background-color 0.2s ease-in;
+	&:hover {
+		background-color: #e0e0e0;
+	}
+
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 12px;
@@ -764,6 +933,10 @@
 .profile-trips__right-btn.accent {
 	background-color: var(--accent-color);
 	color: #fff;
+	transition: background-color 0.3s ease-in;
+	&:hover {
+		background-color: #1acbcf;
+	}
 }
 .profile-trips__right-btn.in-work {
 	background-color: #224646;
@@ -777,6 +950,11 @@
 	background-color: transparent;
 	color: #f13f2d;
 	border: 1px solid #f13f2d;
+	transition: all 0.3s ease-in;
+	&:hover {
+		background-color: #f13f2d;
+		color: #fff;
+	}
 }
 .profile-trips__center-text {
 	margin-bottom: 11px;
@@ -808,6 +986,8 @@
 	display: flex;
 	gap: 37px;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
 	&:not(:last-child) {
 		margin-bottom: 15px;
 	}
@@ -819,6 +999,7 @@
 .reviews-info-left {
 	img {
 		border-radius: 11px;
+		filter: url(#smoothCorners);
 	}
 }
 .reviews-info__head {
@@ -828,6 +1009,10 @@
 	max-width: 306px;
 	text-wrap: balance;
 	margin-bottom: 22px;
+	img {
+		max-width: 60px;
+		max-height: 60px;
+	}
 }
 .reviews-info__head-content {
 }
@@ -845,7 +1030,6 @@
 .reviews-info__bottom {
 }
 .reviews-info__bottom-item {
-	cursor: pointer;
 	&:not(:last-child) {
 		margin-bottom: 20px;
 	}
@@ -871,8 +1055,6 @@
 	color: #bdbdbd;
 	max-width: 325px;
 	text-wrap: balance;
-
-	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.5s ease;
 }
@@ -926,6 +1108,7 @@
 	padding: 20px 25px;
 	color: #f2f2f2;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
 }
 .profile-loyalty__company {
 	margin-bottom: 25px;
@@ -998,6 +1181,8 @@
 	max-width: 186px;
 	background-color: #f2f2f2;
 	border-radius: 13px;
+	filter: url(#smoothCorners);
+
 	padding: 15px;
 	position: relative;
 	img {
@@ -1188,6 +1373,8 @@
 		overflow: visible;
 		background-color: #fff;
 		border-radius: 15px;
+		filter: url(#smoothCorners);
+
 		max-width: 340px;
 		margin: 0 auto;
 		margin-bottom: 20px;
@@ -1516,3 +1703,17 @@
 		}
 	}
 }
+
+/* Скрыть блок с архивными тарифами */
+.profile-tarrifs__bottom.archive {
+	display: none;
+}
+.profile-tarrifs__bottom.hidden {
+	display: none;
+}
+// .profile-tarrifs__bottom.canceled {
+// 	display: none;
+// }
+// .profile-tarrifs__bottom.arbitration {
+// 	display: none;
+// }
